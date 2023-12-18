@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className="fixed z-50 top-0 bg-white w-screen h-14 sm:h-16 drop-shadow-xl items-center flex flex-row justify-between px-2 sm:px-5 ">
         <logo className="flex flex-row cursor-pointer" onClick={() => window.location.href = "/"}>
             <Image src="/logo/logo-color.png" alt="logo" width={50} height={50} className="object-contain m-2 self-center align-middle"/>
-            <h1 className="font-extralight hidden sm:block">Venture Freight Australia</h1>
+            <h1 className="font-extralight text-slate-600 hidden sm:block">Venture Freight Australia</h1>
         </logo>
         <ul className="text-slate-600 font-medium gap-6 sm:flex hidden items-center">
             <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="/">Home</a>
@@ -24,7 +24,7 @@ const Navbar = () => {
             <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="services">Services</a>
             <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="cargoinsurance">Cargo Insurance</a>
             <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="toolsandresources">Tools and Resources</a>
-            <a className="hover:bg-white hover:text-blue-600 transition-colors duration-300 ease-in-out px-5 py-2 bg-blue-600 text-white " href="#">Contact</a>
+            <a className="hover:bg-blue-500 transition-colors duration-300 ease-in-out px-5 py-1 rounded-sm bg-blue-600 text-white " href="#">Contact Us</a>
         </ul>
         <GiHamburgerMenu className={`${!open ? "object-cover" : "hidden"} block sm:hidden`} onClick={handleClick} size="2rem"/>
         <IoCloseSharp className={`${open ? "object-cover" : "hidden"}`} onClick={handleClick} size="2rem"/>
