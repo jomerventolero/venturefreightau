@@ -2,6 +2,7 @@
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs'
 import { useState } from 'react'
 import { RxDotFilled } from 'react-icons/rx'
+import Image from 'next/image'
 
 
 const ImageSlider = () => {
@@ -36,7 +37,8 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className='max-w-[1800px] h-[580px] w-full m-auto py-16 relative group z-10'>
+    <div className='max-w-[1800px] h-[580px] w-full m-auto py-16 relative group place-items-center z-10'>
+      <Image src="/assets/headsup.png" className="absolute hidden sm:block left-[25%] top-[35%]" width="800" height="220" draggable={false}/>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className='w-full h-full bg-center bg-cover duration-500'

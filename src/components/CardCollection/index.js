@@ -8,7 +8,7 @@ import { GiCargoCrate } from 'react-icons/gi';
 
 const CardCollection = () => {
   return (
-      <container className="grid grid-cols-4 px-40 h-[500px] w-screen items-center justify-items-center">
+      <container className="grid grid-cols-2 gap-2 pt-2 sm:gap-0 sm:pt-0 sm:grid-cols-4 sm:px-40 h-[500px] w-screen items-center justify-items-center">
         <Card icon={<FaSuitcase size="3rem" className={`${style.card}`}/>} text="30+ Years of Experience"/>
         <Card icon={<FaLightbulb size="3rem" className={`${style.card}`}/>} text="Experts in FCL, LCL, AIR and Warehousing"/>
         <Card icon={<FaGlobeAsia size="3rem" className={`${style.card}`}/>} text="Representation in all major ports Worldwide"/>

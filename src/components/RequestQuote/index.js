@@ -15,7 +15,7 @@ const RequestQuote = () => {
         <section className="px-10">
             <section className="flex flex-row gap-4 items-center">
                 <FaGlobeAsia size="3rem" className="text-blue-400" />
-                <h1 className="text-5xl font-bold font-mono">Request Quote</h1>
+                <h1 className="text-2xl sm:text-5xl font-bold font-mono">Request Quote</h1>
             </section>
             <p className="translate-x-4 py-2 self-center align-middle text-slate-600">Feel free to contact us anytime. <br/>We will get back to you as soon as we can.</p>
             <form className="flex flex-col gap-4 justify-center items-center text-lg py-10">
@@ -24,6 +24,7 @@ const RequestQuote = () => {
                     <input type="text" name="email" placeholder="Your Email" className="shadow rounded-xl p-2 hover:shadow-blue-300 transition-colors duration-300 ease-in-out"/>
                     <input type="text" name="phone" placeholder="Your Phone Number" className="shadow rounded-xl p-2 hover:shadow-blue-300 transition-colors duration-300 ease-in-out"/>
                     <input type="text" name="subject" placeholder="Subject" className="shadow rounded-xl p-2 hover:shadow-blue-300 transition-colors duration-300 ease-in-out"/>
+                    <textarea type="text" name="message" placeholder="Message" className="shadow rounded-xl p-2 hover:shadow-blue-300 transition-colors duration-300 ease-in-out"/>
                     <select id="services" className="w-full rounded-xl p-2 drop-shadow font-sans font-semibold text-slate-600">
                         <option id="air">Air</option>
                         <option id="sea">Ocean</option>

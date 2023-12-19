@@ -24,7 +24,7 @@ const Navbar = () => {
             <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="services">Services</a>
             <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="cargoinsurance">Cargo Insurance</a>
             <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="toolsandresources">Tools and Resources</a>
-            <a className="hover:bg-blue-500 transition-colors duration-300 ease-in-out px-5 py-1 rounded-sm bg-blue-600 text-white " href="#">Contact Us</a>
+            <a className="hover:bg-blue-500 transition-colors duration-300 ease-in-out px-5 py-1 rounded-sm bg-blue-600 text-white " href="/contactus">Contact Us</a>
         </ul>
         <GiHamburgerMenu className={`${!open ? "object-cover" : "hidden"} block sm:hidden`} onClick={handleClick} size="2rem"/>
         <IoCloseSharp className={`${open ? "object-cover" : "hidden"}`} onClick={handleClick} size="2rem"/>
