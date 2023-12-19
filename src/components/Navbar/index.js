@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
@@ -29,12 +29,13 @@ const Navbar = () => {
         <GiHamburgerMenu className={`${!open ? "object-cover" : "hidden"} block sm:hidden`} onClick={handleClick} size="2rem"/>
         <IoCloseSharp className={`${open ? "object-cover" : "hidden"}`} onClick={handleClick} size="2rem"/>
         {open && (
-          <>
+          <AnimatePresence>
             <motion.div 
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
+              initial={{ opacity: 0, y: -50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -50 }}
               transition={{ duration: 0.5 }}
-              className="sm:hidden absolute justify-center self-center top-4 right-8 bg-white p-2 rounded-lg drop-shadow-xl">
+              className="sm:hidden absolute justify-center self-center top-16 right-2 bg-white p-2 rounded-lg drop-shadow-xl">
               <ul className="text-slate-600 font-medium gap-4 sm:hidden flex flex-col">
                 <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="/">Home</a>
                 <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="about">About</a>
@@ -44,7 +45,7 @@ const Navbar = () => {
                 <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="#">Contact</a>
               </ul>
             </motion.div>
-          </>
+          </AnimatePresence>
         )}
     </nav>
   )
