@@ -8,7 +8,7 @@ import RequestQuote from '@/components/RequestQuote'
 export default function Home() {
   return (
     <>
-      <main className="bg-white w-screen h-screen">
+      <main className="bg-white w-screen h-screen overflow-x-hidden">
         <Navbar />
         <ImageSlider />
         <LandingSection />
