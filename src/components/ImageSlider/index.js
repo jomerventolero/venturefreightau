@@ -1,6 +1,6 @@
 "use client"
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { RxDotFilled } from 'react-icons/rx'
 import Image from 'next/image'
 
@@ -20,6 +20,13 @@ const ImageSlider = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000);
+    return () => clearInterval(interval);
+  })
+
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
@@ -37,8 +44,9 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className='max-w-[1800px] h-[580px] w-full m-auto py-16 relative group place-items-center z-10'>
+    <div className='max-w-[1800px] h-[580px] w-full m-auto p-0 sm:py-16 relative group place-items-center z-10'>
       <Image src="/assets/headsup.png" className="absolute hidden sm:block left-[25%] top-[35%]" width="800" height="220" draggable={false}/>
+      <Image src="/assets/headsup.png" className="absolute sm:hidden z-40 translate-y-52" width="800" height="220" draggable={false}/>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className='w-full h-full bg-center bg-cover duration-500'
