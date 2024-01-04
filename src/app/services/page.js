@@ -1,9 +1,11 @@
 "use client"
+import Navbar from "@/components/Navbar"
 import { motion } from "framer-motion"
 
 const Services = () => {
   return (
     <main>
+        <Navbar />
         <motion.section
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -12,6 +14,7 @@ const Services = () => {
         >
             
         </motion.section>
+        
         <motion.section
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

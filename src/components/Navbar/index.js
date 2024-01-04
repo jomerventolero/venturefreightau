@@ -18,13 +18,13 @@ const Navbar = () => {
             <Image src="/logo/logo-color.png" alt="logo" width={50} height={50} className="object-contain m-2 self-center align-middle"/>
             <h1 className="font-extralight text-slate-700">Venture Freight Australia</h1>
         </logo>
-        <ul className="text-slate-600 font-medium gap-6 sm:flex hidden items-center">
-            <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="/">Home</a>
-            <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="about">About</a>
-            <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="services">Services</a>
-            <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="cargoinsurance">Cargo Insurance</a>
-            <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="toolsandresources">Tools and Resources</a>
-            <a className="hover:bg-blue-500 transition-colors duration-300 ease-in-out px-5 py-1 rounded-sm bg-blue-600 text-white " href="/contactus">Contact Us</a>
+        <ul className="text-slate-600 font-bold sm:flex hidden items-center">
+            <a className="hover:bg-slate-700 hover:text-white transition-colors duration-300 ease-in-out p-5" href="/">Home</a>
+            <a className="hover:bg-slate-700 hover:text-white transition-colors duration-300 ease-in-out p-5" href="about">About</a>
+            <a className="hover:bg-slate-700 hover:text-white transition-colors duration-300 ease-in-out p-5" href="services">Services</a>
+            <a className="hover:bg-slate-700 hover:text-white transition-colors duration-300 ease-in-out p-5" href="cargoinsurance">Cargo Insurance</a>
+            <a className="hover:bg-slate-700 hover:text-white transition-colors duration-300 ease-in-out p-5" href="toolsandresources">Tools and Resources</a>
+            <a className="hover:bg-blue-500 transition-colors duration-300 ease-in-out px-5 mx-1 py-1 rounded-sm bg-blue-600 text-white " href="/contactus">Contact Us</a>
         </ul>
         <GiHamburgerMenu className={`${!open ? "object-cover" : "hidden"} block sm:hidden`} onClick={handleClick} size="2rem"/>
         <IoCloseSharp className={`${open ? "object-cover" : "hidden"}`} onClick={handleClick} size="2rem"/>
