@@ -34,7 +34,7 @@ const FreightShipping = () => {
       />
       <div className="absolute -top-20 left-0 right-0 bottom-0 flex flex-col gap-4 items-center justify-center ">
         <div className="text-center z-40">
-          <motion.h1 className="sm:text-9xl mb-4 text-2xl text-white font-extrabold"
+          <motion.h1 className="sm:text-9xl mb-4 text-2xl text-white font-extrabold drop-shadow-2xl"
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -44,7 +44,7 @@ const FreightShipping = () => {
         <ScrollAnimationComponent />
       </div>
       <div className="h-[500px]"/>    
-      <article className="px-10 py-10">
+      <article className="px-10 pt-36">
         <p className="sm:text-2xl text-xs text-slate-800 text-justify px-5 sm:px-20">
           We provide documentation advice, packing services, warehousing and storage, project shipping and much more. We cater to the shipping needs of most industries and will work tirelessly to work out the most cost effective method to get your freight to its destination.
         </p>
