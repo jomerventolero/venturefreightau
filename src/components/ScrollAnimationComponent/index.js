@@ -22,11 +22,11 @@ const ScrollAnimationComponent = () => {
   return (
     <motion.p
       id="motion-paragraph"
-      className="sm:text-2xl text-xs text-black px-5 sm:px-10 -z-20"
+      className="absolute  sm:text-2xl text-xs text-black px-5 sm:px-10 z-50"
       initial={{ opacity: 0, y: -50 }}
-      animate={{ opacity: 1, y: 0 }}
+      whileInView={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -50 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.5, delay: 1}}
     >
       Our professional and efficient services ensure that our satisfied customers return to Venture Freight all the time for their shipping needs.
     </motion.p>

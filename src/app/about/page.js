@@ -2,8 +2,9 @@
 import Navbar from "@/components/Navbar"
 import { IoHardwareChip } from "react-icons/io5"
 import { motion } from "framer-motion"
+import Footer from "@/components/Footer"
 
-const about = () => {
+const about = () => { 
   return (
     <container className="flex flex-col justify-center items-center">
       <Navbar />
@@ -78,6 +79,7 @@ const about = () => {
           <li className="text-slate-600">Warehousing & Transport</li>
         </ul>
       </motion.div>
+      <Footer />
     </container>
   )
 }

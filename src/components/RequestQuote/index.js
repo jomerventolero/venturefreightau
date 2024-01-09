@@ -10,6 +10,9 @@ const RequestQuote = () => {
   const handleVerify = () => {
     setVerified(true)
   }
+
+  
+
   return (
     <container className="flex flex-row gap-4 justify-center items-center py-20">
         <section className="px-10">
