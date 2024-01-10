@@ -1,8 +1,6 @@
-import { Inter } from 'next/font/google'
 import { Roboto } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
 const roboto = Roboto({
   subsets: ['latin'],
   weight: '400',
@@ -11,7 +9,7 @@ const roboto = Roboto({
 
 export const metadata = {
   title: 'Venture Freight Australia',
-  description: 'We take the complicated out of your Logistics needs.',
+  description: 'We take the complicated out of your Logistics needs. Australian Leading Freight Forwarder, Customs Broker, Freight forwarder Australia, Venture Freight Australia',
 }
 
 export default function RootLayout({ children }) {

@@ -4,6 +4,8 @@ import ReCAPTCHA from 'react-google-recaptcha';
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
 import Navbar from "@/components/Navbar";
+import ContactInfo from "@/components/ContactInfo";
+import Footer from "@/components/Footer";
 
 const ContactUs = () => {
   const [verified, setVerified] = useState(false);
@@ -59,7 +61,7 @@ const ContactUs = () => {
   };
 
   return (
-    <container className="flex flex-col gap-4 justify-center items-center py-10">
+    <container className="flex flex-col gap-2 justify-center items-center py-10">
       <Navbar />
       <img
         src="/assets/shipaerial.jpg"
@@ -67,13 +69,13 @@ const ContactUs = () => {
         className="w-full h-[40vh] object-cover parallax z-40"
         data-speed="0.5"
       />
-      <section className="grid sm:grid-cols-2 gap-2 px-10">
+      <section className="grid sm:grid-cols-2 gap-2 p-4">
         <container className="px-0">
-          <section className="flex flex-row gap-4 items-center">
-            <FaGlobeAsia size="3rem" className="text-blue-400" />
+          <section className="flex flex-row gap-4 justify-center items-center self-center text-center">
+            <FaGlobeAsia size="3rem" className="text-blue-400 self-center" />
             <h1 className="text-2xl sm:text-5xl font-bold font-mono">Request Quote</h1>
           </section>
-          <p className="translate-x-4 py-2 self-center align-middle text-slate-600">
+          <p className="translate-x-4 py-2 text-center self-center align-middle text-slate-600">
             Feel free to contact us anytime. <br />We will get back to you as soon as we can.
           </p>
           <form
@@ -183,12 +185,11 @@ const ContactUs = () => {
             </section>
           </form>
         </container>
-        <info className="sm:px-40 px-10">
-          <p className="text-slate-600">
-            Copyright © 2024. All rights reserved.
-          </p>
+        <info className="sm:px-10 px-10">
+          <ContactInfo />
         </info>
       </section>
+      <Footer />
     </container>
   );
 };
