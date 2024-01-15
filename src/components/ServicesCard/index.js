@@ -1,11 +1,15 @@
 "use client"
 import { motion } from 'framer-motion'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Footer from '../Footer'
 
 
 const ServicesCard = () => {
+
+  const [domestic, setdomestic] = useState(true)
+  const [warehousing, setwarehousing] = useState(false)
+  const [project, setproject] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,7 +33,7 @@ const ServicesCard = () => {
     <container className="flex flex-col gap-4 justify-center text-slate-600">
       
         <Image src="/assets/sea-freight.jpg" alt="Sea Freight" width={1500} height={900} className="parallax w-screen h-[30vh] object-cover" data-speed="0.5"/>
-      <div className="bg-white z-40">
+      <div className="bg-white z-40 py-8">
         <h1 className="px-5 sm:px-40 text-2xl font-semibold">Sea Freight</h1>
         <motion.section className="px-5 sm:px-40 ">
         The most economical way to fulfil your promises across the globe would be sending your freight by sea. We have the expertise to organize your shipment ranging from single pallet loads and container loads to automobiles, boats and large equipment that might not fit a container, our professional and efficient services ensure that our satisfied customers return to Venture Freight all the time for their shipping needs. We provide documentation advice, packing services, warehousing and storage, project shipping and much more. We cater to the shipping needs of most industries and will work tirelessly to work out the most cost effective method to get your freight to its destination.<br />
@@ -37,8 +41,8 @@ const ServicesCard = () => {
         Send an enquiry our way to find out how we can help you reduce your freight bill.
         </motion.section>
       </div>
-      <Image src="/assets/air-freight.jpg" alt="Sea Freight" width={1500} height={900} className="parallax w-screen h-[30vh] object-cover" data-speed="0.3"/>
-      <div className="bg-white z-40 pb-52">
+      <Image src="/assets/air-freight.jpg" alt="Sea Freight" width={1500} height={900} className="parallax w-screen h-[30vh] object-cover -z-10" data-speed="0.3"/>
+      <div className="bg-white z-40 pb-52 py-8">
         <h1 className="px-5 sm:px-40 text-2xl font-semibold">Air Freight</h1>
         <motion.section className="px-5 sm:px-40 ">
         During today’s fast-paced community everyone needs every little thing the previous day. We at Venture Freight know that air freight services are crucial to a variety of different businesses. Therefore, we organise all deliveries with the utmost priority especially when it is time to deliver your air cargo to you. <br/>
@@ -47,7 +51,7 @@ const ServicesCard = () => {
         Find out more by dropping us an enquiry today.
         </motion.section>
       </div>
-      <Image src="/assets/aerialview.jpg" alt="Customs Brokerage" width={1500} height={900} className="w-screen h-[30vh] object-cover" data-speed="0.5"/>
+      <Image src="/assets/aerialview.jpg" alt="Customs Brokerage" width={1500} height={900} className="w-screen h-[30vh] object-cover"/>
       <motion.div 
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -63,9 +67,9 @@ const ServicesCard = () => {
         Venture Freight’s international pricing team negotiates for the best deals on ocean freight shipping across the globe on a daily basis. Therefore you can always rest easy and know that you did it with the best possible deal available out there.<br/>
         Send an enquiry our way to find out how we can help you reduce your freight bill.
         </section>
-        <div className="bg-slate-100 mx-40">
+        <div className="bg-slate-100 mx-36 my-4">
           <div className="collapse bg-base-200 w-3/4">
-            <input type="radio" name="my-accordion-1" checked="checked" /> 
+            <input type="radio" name="my-accordion-2" /> 
             <div className="collapse-title text-xl font-medium">
               Q: Why should I consider Venture Freight as my customs broker?
             </div>
@@ -77,7 +81,7 @@ const ServicesCard = () => {
             </div>
           </div>
           <div className="collapse bg-base-200 w-3/4">
-            <input type="radio" name="my-accordion-1" checked="checked" /> 
+            <input type="radio" name="my-accordion-2" /> 
             <div className="collapse-title text-xl font-medium">
               Q: What is a customs broker?
             </div>
@@ -88,7 +92,7 @@ const ServicesCard = () => {
             </div>
           </div>
           <div className="collapse bg-base-200 w-3/4">
-            <input type="radio" name="my-accordion-1" checked="checked" /> 
+            <input type="radio" name="my-accordion-2" /> 
             <div className="collapse-title text-xl font-medium">
               Q. Clearance of my merchandise: What do I need?
             </div>
@@ -109,7 +113,7 @@ const ServicesCard = () => {
             </div>
           </div>
           <div className="collapse bg-base-200 w-3/4">
-            <input type="radio" name="my-accordion-1" checked="checked" /> 
+            <input type="radio" name="my-accordion-2" /> 
             <div className="collapse-title text-xl font-medium">
               Q: What is a customs broker?
             </div>
@@ -120,7 +124,7 @@ const ServicesCard = () => {
             </div>
           </div>
           <div className="collapse bg-base-200 w-3/4">
-            <input type="radio" name="my-accordion-1" checked="checked" /> 
+            <input type="radio" name="my-accordion-2" /> 
             <div className="collapse-title text-xl font-medium">
               Q: When is the best time to talk to your Customs Broker?
             </div>
@@ -130,6 +134,63 @@ const ServicesCard = () => {
               </p>
             </div>
           </div>
+        </div>
+      </motion.div>
+      <motion.div 
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.5,
+          delay: 0.2
+        }}
+        className="bg-white flex flex-row justify-center items-center align-middle"
+      >
+        <div className={`cursor-pointer flex flex-col w-80 h-40 p-5 m-2 border-[1px] border-slate-400 items-center ${domestic ? "border-blue-500" : ""}`} onClick={() => {setdomestic(!domestic), setwarehousing(false), setproject(false)}}>
+          <Image src="/icons/domestic-transportation.png" alt="domestic-transportation" width={59} height={34} className="self-center"/>
+          <h1 className="text-2xl font-bold">Domestic Transportation</h1>
+        </div>
+        <div className={`cursor-pointer flex flex-col w-80 h-40 p-5 m-2 border-[1px] border-slate-400 items-center ${warehousing ? "border-blue-500" : ""}`} onClick={() => {setwarehousing(!warehousing), setdomestic(false), setproject(false)}}>
+          <Image src="/icons/warehousing-services.png" alt="warehousing-services" width={72} height={38} className="self-center"/>
+          <h1 className="text-2xl font-bold">Warehousing Services</h1>
+        </div>
+        <div className={`cursor-pointer flex flex-col w-80 h-40 p-5 m-2 border-[1px] border-slate-400 items-center ${project ? "border-blue-500" : ""}`} onClick={() => {setproject(!project), setdomestic(false), setwarehousing(false)}}>
+          <Image src="/icons/project-logistics.png" alt="project-logistics" width={41} height={38} className="self-center"/>
+          <h1 className="text-2xl font-bold">Project Logistics</h1>
+        </div>
+      </motion.div>
+      <motion.div className="sm:px-40 px-5">
+        <div className={warehousing && project ? "hidden" : "block"}>
+          {
+            domestic ? <p>Transporting a container, a couple of pallets, loose items or bulky loads such as vehicles, boats or machinery are just some of the many different freight transportation options that we provide. We focus on metropolitan Melbourne and regional Victoria and add to that an extensive carrier network that covers all of Australia including Tasmania. You might say we have always an extra forward in our wings to call the plays necessary to score a goal for our customers when they need it most. Send an enquiry down our way to find out more about our transportation and distribution solutions.</p> : null
+          }
+        </div>
+        <div className={domestic && project ? "hidden" : "block"}>
+          {
+            warehousing ? <p>Running a business can involve in taking care of many aspects, one of the most compelling reasons to use a contract warehouse is that it gives you more flexibility on excelling in your core competencies. Companies rely on us to ensure that their goods are stored safely and orderly. Stock levels are automatically reported to them as soon as there is movement in their inventory and regular stock counts are performed to make sure the numbers are accurate.<br/><br/>The following add–on services are carried out with great care and efficiency this includes container unpacks, palletizing and storage, variable storage charges, unlimited capacity, fast order turnaround, pallet, carton or inner item picking (pick pack), kitting, assembly, multi carrier despatch, cycle counting, full inventory traceability and many others. Find out how we can solve your storage issues by making an enquiry today.</p> : null
+          }
+        </div>
+        <div className={domestic && warehousing ? "hidden" : "block"}>
+          {
+            project ? <p>With more than 10 years of experience in shipping and heavy transport, we know how to do a job safely, efficiently and effectively. Project freight is always different and requires a tailored approach. Whether it is to relocate an entire manufacturing plant to china or move a sensitive transformer to a remote location, our project cargo team assist its clients from the initial planning and budget phase to the eventual delivery and installation. Our handful of sub-contractors that we use to aid us in completing our projects are carefully selected and scrutinized as we know how important it is to make the job as error free as possible.
+            <br/><br/>
+            <span className="">
+              Services for oil and gas include
+              <li>Large scale heavy lifts projects.</li>
+              <li>Logistical feasibility study</li>
+              <li>Analysis of the transport process</li>
+              <li>Project planning</li>
+              <li>Project freight forwarding services including full and part charter for air and ocean freight</li>
+              <li>Project logistics and distribution</li>
+              <li>Customs clearance</li>
+              <li>Expediting services to ensure the quality and timely delivery of your equipment</li>
+              <li>Arranging freight insurance</li>
+              <li>Arranging special transport permits (i.e. for heavy or over-dimensional loads)</li>
+              <li>Advanced IT solutions including tracking and customised status reporting</li>
+              <li>Warehousing of cargo</li>
+              <li>Heavy-lift transport engineering</li>
+            </span>
+            </p> : null
+          }
         </div>
       </motion.div>
       <Footer />
