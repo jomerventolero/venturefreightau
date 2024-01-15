@@ -1,9 +1,12 @@
 "use client"
 import Navbar from '@/components/Navbar'
 import { motion } from 'framer-motion'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 const OverDimensionalCargo = () => {
+
+  const [showForm, setShowForm] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollValue = window.scrollY;
@@ -21,6 +24,7 @@ const OverDimensionalCargo = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
   return (
     <container>
         <Navbar />
@@ -71,10 +75,10 @@ const OverDimensionalCargo = () => {
                 viewport={{ once: true }}
                 className="text-start text-md sm:text-lg text-slate-600 font-medium"
               >
-                <div class="collapse bg-base-200">
+                <div class="collapse bg-base-200" onClick={() => setShowForm(!showForm)}>
                   <input type="checkbox" /> 
                   <div class="collapse-title text-xl font-medium">
-                    Our Services for Project cargo include
+                    Our Services for Project cargo include {showForm ? '⬆️' : '⬇️'}
                   </div>
                   <div class="collapse-content px-5 mx-5"> 
                     <li>Large scale heavy lifts projects</li>

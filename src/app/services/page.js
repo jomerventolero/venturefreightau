@@ -1,13 +1,13 @@
 "use client"
 import Navbar from "@/components/Navbar"
-import ServiceCards from "@/components/ServiceCards"
-import { motion } from "framer-motion"
+import ServicesCard from "@/components/ServicesCard"
 
 const Services = () => {
+
   return (
     <main>
         <Navbar />
-        <ServiceCards />        
+        <ServicesCard />        
     </main>
   )
 }
