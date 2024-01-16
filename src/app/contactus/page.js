@@ -1,7 +1,7 @@
 "use client";
 import { FaGlobeAsia } from "react-icons/fa";
 import ReCAPTCHA from 'react-google-recaptcha';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import Navbar from "@/components/Navbar";
 import ContactInfo from "@/components/ContactInfo";
@@ -60,16 +60,34 @@ const ContactUs = () => {
     }
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollValue = window.scrollY;
+      const parallaxElements = document.querySelectorAll('.parallax');
+      
+      parallaxElements.forEach(element => {
+        const speed = element.dataset.speed;
+        element.style.transform = `translateY(${scrollValue * speed}px)`;
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <container className="flex flex-col gap-2 justify-center items-center py-10">
       <Navbar />
       <img
         src="/assets/shipaerial.jpg"
         alt="Ship Aerial View"
-        className="w-full h-[40vh] object-cover parallax z-40"
+        className="w-full h-[40vh] object-cover parallax z-10"
         data-speed="0.5"
       />
-      <section className="grid sm:grid-cols-2 gap-2 p-4">
+      <section className="grid sm:grid-cols-2 gap-2 p-4 z-30 bg-white">
         <container className="px-0">
           <section className="flex flex-row gap-4 justify-center items-center self-center text-center">
             <FaGlobeAsia size="3rem" className="text-blue-400 self-center" />
