@@ -1,6 +1,8 @@
+"use client"
 import { motion } from "framer-motion";
 
 const ContactInfo = () => {
+
   return (
     <div className="container">
       <motion.div
@@ -56,6 +58,8 @@ const ContactInfo = () => {
           endeavor to answer your enquiries.
         </p>
       </motion.div>
+
+      
     </div>
   );
 };

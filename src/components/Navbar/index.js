@@ -39,11 +39,11 @@ const Navbar = () => {
               className="sm:hidden absolute justify-center self-center top-16 right-2 bg-white p-2 rounded-lg drop-shadow-xl">
               <ul className="text-slate-600 font-medium gap-4 sm:hidden flex flex-col">
                 <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="/">Home</a>
-                <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="about">About</a>
-                <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="services">Services</a>
-                <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="cargoinsurance">Cargo Insurance</a>
-                <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="toolsandresources">Tools and Resources</a>
-                <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="#">Contact</a>
+                <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="/about">About</a>
+                <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="/services">Services</a>
+                <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="/cargoinsurance">Cargo Insurance</a>
+                <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="/tools-resources">Tools and Resources</a>
+                <a className="hover:text-blue-500 transition-colors duration-300 ease-in-out" href="/contactus">Contact</a>
               </ul>
             </motion.div>
           </AnimatePresence>

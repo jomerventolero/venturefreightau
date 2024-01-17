@@ -26,11 +26,11 @@ const OverDimensionalCargo = () => {
   }, []);
 
   return (
-    <container>
+    <container >
         <Navbar />
         <img
-          src="/assets/sea-freight.jpg"
-          alt="Ship Aerial View"
+          src="/assets/pexels2.jpg"
+          alt="Pexels2"
           className="w-full h-[40vh] object-cover parallax z-40"
           data-speed="0.5"
         />
@@ -40,7 +40,7 @@ const OverDimensionalCargo = () => {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="text-start text-lg sm:text-2xl text-slate-600 font-bold"
+              className="text-start text-lg sm:text-2xl text-slate-600 font-bold px-5"
             >
               Over Dimensional Cargo
             </motion.section>
@@ -49,7 +49,7 @@ const OverDimensionalCargo = () => {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
               viewport={{ once: true }}
-              className="text-start text-md sm:text-lg text-slate-600 font-medium"
+              className="text-start text-md sm:text-lg text-slate-600 font-medium px-5"
             >
                From booking the shipping vessel to organizing the appropriate equipment to move your cargo.
                We have the know how to move your bulk cargo safely, efficiently and effectively. 
@@ -63,11 +63,11 @@ const OverDimensionalCargo = () => {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.8 }}
               viewport={{ once: true }}
-              className="text-start text-md sm:text-lg text-slate-600 font-medium"
+              className="text-start text-md sm:text-lg text-slate-600 font-medium px-5"
             >
               Our handful of sub-contractors that we use to aid us in completing our projects are carefully selected and scrutinized as we know how important it is to make the job as error free as possible.
             </motion.section>
-            <section className="text-start text-md sm:text-lg text-slate-600 font-medium">
+            <section className="text-start text-md sm:text-lg text-slate-600 font-medium px-5">
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}

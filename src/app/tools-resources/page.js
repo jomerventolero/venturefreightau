@@ -98,7 +98,7 @@ const ToolsResources = () => {
                     <p className="font-semibold">Below are some commonly measurement exchange tables:</p>
                     <div className="flex sm:flex-row flex-col sm:gap-40 gap-4 justify-start">
 
-                        <table className="table sm:w-[300px] w-[250px] text-xs sm:text-lg">
+                        <table className="table sm:w-[300px] w-[250px] text-xs sm:text-md">
                             <th>Length Measurement</th>
                             <tr>
                                 <td>1 inch</td>
@@ -130,7 +130,7 @@ const ToolsResources = () => {
                             </tr>
                         </table>
 
-                        <table className="table sm:w-[300px] w-[250px] text-xs sm:text-lg">
+                        <table className="table sm:w-[300px] w-[250px] text-xs sm:text-md">
                             <th>Surface Measurement</th>
                             <tr>
                                 <td>1 inch<sup>2</sup></td>
@@ -161,7 +161,7 @@ const ToolsResources = () => {
                     </div>
                     <div className="flex sm:flex-row flex-col sm:gap-40 gap-4 justify-start">
 
-                        <table className="table sm:w-[300px] w-[250px] text-xs sm:text-lg">
+                        <table className="table sm:w-[300px] w-[250px] text-xs sm:text-md">
                             <th>Space Measurement</th>
                             <tr>
                                 <td>1 inch<sup>3</sup></td>
@@ -190,7 +190,7 @@ const ToolsResources = () => {
                             
                         </table>
 
-                        <table className="table sm:w-[300px] w-[250px] text-xs sm:text-lg">
+                        <table className="table sm:w-[300px] w-[250px] text-xs sm:text-md">
                             <th>Weight Measurement</th>
                             <tr>
                                 <td>1 Pound</td>
@@ -227,10 +227,12 @@ const ToolsResources = () => {
                     Incoterms
                 </div>
                 <div class="collapse-content"> 
+                    <Image src="/assets/incoterms.png" width="1500" height="800" className="self-center w-[800px]" draggable={false}/>
                     <p>
-                        <span className="text-slate-600">You can find the container specifications for both air cargo and sea cargo in the links provided below Air freight container</span><br/><br/>
-                        <a className="text-blue-500 pl-4 hover:underline duration-300 ease-in-out transition-all" href="/assets/Air-freight-container-specifications.pdf" target='_blank'>Air Freight container specifications</a><br/>
-                        <a className="text-blue-500 pl-4 hover:underline duration-300 ease-in-out transition-all" href="/assets/Sea-freight-container-specifications.pdf" target="_blank">Sea Freight container specifications</a>
+                        <span className="text-slate-600">From 1 January 2011 onwards, revised Incoterms will come into effect worldwide.</span><br/><br/>
+                        <span>
+                        Instead of 13 clauses, there will only be 11 and divided into two categories. Clauses for all types of transport: EXW, FCA, CPT, CIP, DAT, DAP, DDP Clauses for sea and inland water transport: FAS, FOB, CFR, and CIF The picture above describes the various incoterms and their respective definitions, please <a href="/contactus" className="hover:underline text-blue-500 cursor-pointer">contact us</a> should you require clarification
+                        </span>
                     </p>
                 </div>
             </motion.div>

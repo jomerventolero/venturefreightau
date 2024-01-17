@@ -32,7 +32,7 @@ const ServicesCard = () => {
   return (
     <container className="flex flex-col gap-4 justify-center text-slate-600">
       
-        <Image src="/assets/sea-freight.jpg" alt="Sea Freight" width={1500} height={900} className="parallax w-screen h-[30vh] object-cover" data-speed="0.5"/>
+      <Image src="/assets/sea-freight.jpg" alt="Sea Freight" width={1500} height={900} className="parallax w-screen h-[30vh] object-cover" data-speed="0.5"/>
       <div className="bg-white z-40 py-8">
         <h1 className="px-5 sm:px-40 text-2xl font-semibold">Sea Freight</h1>
         <motion.section className="px-5 sm:px-40 ">
@@ -59,6 +59,7 @@ const ServicesCard = () => {
           duration: 0.5,
           delay: 0.2
         }}
+        id="customs"
         className="bg-white z-40"
       >
         <h1 className="px-5 sm:px-40 text-2xl font-semibold">Customs Brokerage</h1>
