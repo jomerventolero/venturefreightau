@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { useEffect } from 'react'
-import { FaCalculator, FaCalendar, FaPlane, FaShip, FaTruck } from 'react-icons/fa'
+import { FaCalculator, FaCalendar, FaPlane, FaShip, FaTable, FaTruck } from 'react-icons/fa'
 
 const ToolsResources = () => {
   
@@ -236,6 +236,51 @@ const ToolsResources = () => {
                     </p>
                 </div>
             </motion.div>
+
+            <motion.div 
+                initial={{ opacity: 0, y: -50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -50 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+                viewport={{ once: true }}
+                class="collapse collapse-plus bg-base-200 ">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title sm:text-xl font-medium flex flex-row gap-2 items-center text-xs">
+                    <FaTable className="text-blue-500" size="2rem" />
+                    Rate Table
+                </div>
+                <div class="collapse-content"> 
+                    <p>
+                        Detention rate Schedule: VFA detention rate table is monitored by our professionals and will be updated in timely manner to ensure it contains update and relevant information. For more up-to-date information, please <a href="/contactus" className="hover:underline text-blue-500 cursor-pointer">contact us</a>
+                        <br />
+                        <br />
+                        <a className="hover:underline text-blue-500 cursor-pointer" target="_blank" href="/assets/VFA-Detention-Charge-Tables.pdf">VFA Detention Charge Tables</a>
+                    </p>
+                </div>
+            </motion.div>
+
+            <motion.div 
+                initial={{ opacity: 0, y: -50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -50 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+                viewport={{ once: true }}
+                class="collapse collapse-plus bg-base-200 ">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title sm:text-xl font-medium flex flex-row gap-2 items-center text-xs">
+                    <FaTable className="text-blue-500" size="2rem" />
+                    Trading Term
+                </div>
+                <div class="collapse-content"> 
+                    <p>
+                        Venture Freight is committed to provide current Trading Terms
+                        <br />
+                        <br />
+                        <a className="hover:underline text-blue-500 cursor-pointer" target="_blank" href="/assets/Standard-Trading-Conditions.pdf">Standard Terms and Conditions - Applicable July 2015</a>
+                    </p>
+                </div>
+            </motion.div>
+
         </div>
         <Footer />
     </container>

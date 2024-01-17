@@ -68,8 +68,8 @@ const ServicesCard = () => {
         Venture Freight’s international pricing team negotiates for the best deals on ocean freight shipping across the globe on a daily basis. Therefore you can always rest easy and know that you did it with the best possible deal available out there.<br/>
         Send an enquiry our way to find out how we can help you reduce your freight bill.
         </section>
-        <div className="bg-slate-100 mx-36 my-4">
-          <div className="collapse bg-base-200 w-3/4">
+        <div className="bg-slate-100 mx-5 sm:mx-36 my-4">
+          <div className="collapse bg-base-200 w-full sm:w-3/4">
             <input type="radio" name="my-accordion-2" /> 
             <div className="collapse-title text-xl font-medium">
               Q: Why should I consider Venture Freight as my customs broker?
@@ -146,17 +146,17 @@ const ServicesCard = () => {
         }}
         className="bg-white flex flex-row justify-center items-center align-middle"
       >
-        <div className={`cursor-pointer flex flex-col w-80 h-40 p-5 m-2 border-[1px] border-slate-400 items-center `} onClick={() => {setdomestic(!domestic), setwarehousing(false), setproject(false)}}>
+        <div className={`${domestic ? "border-blue-500 border-2" : ""} cursor-pointer flex flex-col sm:w-80 sm:h-40 w-20 h-20 p-5 m-2 border-[1px] border-slate-400 items-center `} onClick={() => {setdomestic(!domestic), setwarehousing(false), setproject(false)}}>
           <Image src="/icons/domestic-transportation.png" alt="domestic-transportation" width={59} height={34} className="self-center"/>
-          <h1 className={`text-2xl font-bold ${domestic ? "underline" : ""}`}>Domestic Transportation</h1>
+          <h1 className={`text-2xl font-bold ${domestic ? "underline" : ""} hidden sm:block`}>Domestic Transportation</h1>
         </div>
-        <div className={`cursor-pointer flex flex-col w-80 h-40 p-5 m-2 border-[1px] border-slate-400 items-center ${warehousing ? "border-blue-500" : ""}`} onClick={() => {setwarehousing(!warehousing), setdomestic(false), setproject(false)}}>
+        <div className={`${warehousing ? "border-blue-500 border-2" : ""} cursor-pointer flex flex-col sm:w-80 sm:h-40 w-20 h-20 p-5 m-2 border-[1px] border-slate-400 items-center ${warehousing ? "border-blue-500" : ""}`} onClick={() => {setwarehousing(!warehousing), setdomestic(false), setproject(false)}}>
           <Image src="/icons/warehousing-services.png" alt="warehousing-services" width={72} height={38} className="self-center"/>
-          <h1 className={`text-2xl font-bold ${warehousing ? "underline" : ""}`}>Warehousing Services</h1>
+          <h1 className={`text-2xl font-bold ${warehousing ? "underline" : ""} hidden sm:block`}>Warehousing Services</h1>
         </div>
-        <div className={`cursor-pointer flex flex-col w-80 h-40 p-5 m-2 border-[1px] border-slate-400 items-center ${project ? "border-blue-500" : ""}`} onClick={() => {setproject(!project), setdomestic(false), setwarehousing(false)}}>
+        <div className={`${project ? "border-blue-500 border-2" : ""} cursor-pointer flex flex-col sm:w-80 sm:h-40 w-20 h-20 p-5 m-2 border-[1px] border-slate-400 items-center ${project ? "border-blue-500" : ""}`} onClick={() => {setproject(!project), setdomestic(false), setwarehousing(false)}}>
           <Image src="/icons/project-logistics.png" alt="project-logistics" width={41} height={38} className="self-center"/>
-          <h1 className={`text-2xl font-bold ${project ? "underline" : ""}`}>Project Logistics</h1>
+          <h1 className={`text-2xl font-bold ${project ? "underline" : ""} hidden sm:block`}>Project Logistics</h1>
         </div>
       </motion.div>
       <motion.div className="sm:px-40 px-5">

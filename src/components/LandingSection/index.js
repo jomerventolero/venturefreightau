@@ -12,7 +12,7 @@ const LandingSection = () => {
             Venture Freight Australia is a leading provider of technology-enabled freight forwarding serving the transportation and logistical needs of our clients. Our dedicated team business model gives each client a team of transportation professionals to be your point of contact for all your shipping needs.
           </span>
           <span className="flex-row flex items-center gap-4 hover:text-white transition-colors duration-300 ease-in-out cursor-pointer text-xs">
-            <IoHardwareChip size="2rem"/>
+            <IoHardwareChip className="hover:text-white transition-colors duration-300 ease-in-out cursor-pointer" size="2rem"/>
             Technology-Enabled Freight Forwarding
           </span>
           <span className="flex-row flex items-center gap-4 hover:text-white transition-colors duration-300 ease-in-out cursor-pointer text-xs">
