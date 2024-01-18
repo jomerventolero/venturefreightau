@@ -9,7 +9,7 @@ const ImageSlider = () => {
   const slides = [
     {
       url: '/assets/shipglobal.jpg',
-      header: "Container Tracking",
+      header: "Smart Logistics: Transforming Shipping Operations with Container Tracking",
       location: "",
     },
     {
@@ -19,7 +19,7 @@ const ImageSlider = () => {
     },
     {
       url: '/assets/shiprear.jpg',
-      header: "Bulk Shipping",
+      header: "Bulk Shipping Excellence: Redefining the Movement of Goods",
       location: "",
     },
     {
