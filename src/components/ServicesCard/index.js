@@ -30,7 +30,7 @@ const ServicesCard = () => {
   }, []);
 
   return (
-    <container className="flex flex-col gap-4 justify-center text-slate-600">
+    <container className="flex flex-col gap-4 justify-center text-slate-600 bg-white">
       
       <Image src="/assets/sea-freight.jpg" alt="Sea Freight" width={1500} height={900} className="parallax w-screen h-[30vh] object-cover" data-speed="0.5"/>
       <div className="bg-white z-40 py-8">
