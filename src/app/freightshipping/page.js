@@ -42,7 +42,7 @@ const FreightShipping = () => {
         </div>
         <motion.p
           id="motion-paragraph"
-          className="sm:text-2xl text-xs text-black px-5 sm:px-10 -z-20"
+          className="sm:text-2xl bg-white text-xs text-black px-5 z-40 p-2 rounded-full m-5"
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -50 }}
