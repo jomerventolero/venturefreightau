@@ -170,7 +170,7 @@ const ServicesCard = () => {
                 delay: 0.2
               }}
             >
-              <p className="sm:hidden block">Domestic Transport</p>
+              <p className="sm:hidden block text-center font-semibold">Domestic Transportation</p>
               Transporting a container, a couple of pallets, loose items or bulky loads such as vehicles, boats or machinery are just some of the many different freight transportation options that we provide. We focus on metropolitan Melbourne and regional Victoria and add to that an extensive carrier network that covers all of Australia including Tasmania. You might say we have always an extra forward in our wings to call the plays necessary to score a goal for our customers when they need it most. Send an enquiry down our way to find out more about our transportation and distribution solutions.</motion.p> : null
           }
         </div>
@@ -184,7 +184,7 @@ const ServicesCard = () => {
                 delay: 0.2
               }}
             >
-              <p className="sm:hidden block">Warehousing Services</p>
+              <p className="sm:hidden block text-center font-semibold">Warehousing Services</p>
               Running a business can involve in taking care of many aspects, one of the most compelling reasons to use a contract warehouse is that it gives you more flexibility on excelling in your core competencies. Companies rely on us to ensure that their goods are stored safely and orderly. Stock levels are automatically reported to them as soon as there is movement in their inventory and regular stock counts are performed to make sure the numbers are accurate.<br/><br/>The following add–on services are carried out with great care and efficiency this includes container unpacks, palletizing and storage, variable storage charges, unlimited capacity, fast order turnaround, pallet, carton or inner item picking (pick pack), kitting, assembly, multi carrier despatch, cycle counting, full inventory traceability and many others. Find out how we can solve your storage issues by making an enquiry today.</motion.p> : null
           }
         </div>
@@ -198,7 +198,7 @@ const ServicesCard = () => {
                 delay: 0.2
               }}
             >
-              <p className="sm:hidden block">Project Logistics</p>
+              <p className="sm:hidden block text-center font-semibold">Project Logistics</p>
               With more than 10 years of experience in shipping and heavy transport, we know how to do a job safely, efficiently and effectively. Project freight is always different and requires a tailored approach. Whether it is to relocate an entire manufacturing plant to china or move a sensitive transformer to a remote location, our project cargo team assist its clients from the initial planning and budget phase to the eventual delivery and installation. Our handful of sub-contractors that we use to aid us in completing our projects are carefully selected and scrutinized as we know how important it is to make the job as error free as possible.
             <br/><br/>
             <span className="">
