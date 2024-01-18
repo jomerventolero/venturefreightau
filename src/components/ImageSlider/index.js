@@ -86,7 +86,7 @@ const ImageSlider = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: .5, type: "fadeIn" }}
-          href={slides[currentIndex].location} className="cursor-pointer hover:underline absolute z-50 top-96 sm:top-18  text-center pt-10 sm:px-40 text-white drop-shadow-2xl text-xl font-bold">{slides[currentIndex].header}
+          href={slides[currentIndex].location} className="shadow cursor-pointer hover:underline absolute z-50 top-96 sm:top-18  text-center pt-10 sm:px-40 text-white drop-shadow-2xl text-xl font-bold">{slides[currentIndex].header}
         </motion.a>
 
       </div>
