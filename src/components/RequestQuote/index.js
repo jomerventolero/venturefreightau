@@ -90,7 +90,7 @@ const RequestQuote = () => {
                 <button className={`bg-white drop-shadow-2xl rounded-xl m-4 px-4 py-2 `} disabled={!verified}>Submit</button>
             </form>
         </section>
-        <Image draggable={false} src="/assets/container-operations.jpg" width="800" height="250" className="hidden sm:block rounded-tl-3xl rounded-br-3xl rounded-md"/>
+        <Image draggable={false} src="/assets/container-operations.jpg" width="800" height="250" className="hidden sm:block rounded-tl-[25%] rounded-br-[25%] rounded-md"/>
     </container>
   )
 }

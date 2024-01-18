@@ -3,24 +3,35 @@ import Navbar from "@/components/Navbar"
 import { IoHardwareChip } from "react-icons/io5"
 import { motion } from "framer-motion"
 import Footer from "@/components/Footer"
+import Image from "next/image"
+import Head from "next/head"
 
 const about = () => { 
   return (
     <container className="flex flex-col justify-center items-center">
+      <Head>
+        <title>Why Choose Us?</title>
+        <meta name="description" content="When choosing a freight forwarder to help ship your goods it is important to choose the right partner. Venture Freight is an Australian freight forwarding company that utilises internet-based technology to provide stellar freight forwarding services with a commitment to reliability, proper time delivery and long-term relationships."/>
+      </Head>
       <Navbar />
-      <img src="/assets/aerialview.jpg" width={600} height={90} alt="about" className="w-screen h-[150px] object-cover mt-[3rem] sm:mt-[4rem]"/>
+      <Image src="/assets/aerialview.jpg" width={1500} height={800} alt="about" className="w-screen h-[150px] object-cover mt-[3rem] sm:mt-[4rem]"/>
       <motion.span
         initial={{ opacity: 0}}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.1 }}
         viewport={{ once: true }}
         className="absolute z-40 top-28 font-bold text-white text-2xl sm:text-4xl drop-shadow-2xl">Why Choose Us?</motion.span>
-      <motion.img 
+      <motion.div
         initial={{ opacity: 0}}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1 }}
         viewport={{ once: true }}
-        src="/assets/about-us.jpg" width={600} height={90} alt="about" className="sm:w-3/4 h-full object-cover py-4 px-4"/>
+        className="w-full place-items-center flex flex-row justify-center self-center items-center gap-2 px-4"
+      >
+      <Image 
+        
+        src="/assets/about-us.jpg" width={1400} height={800} alt="about" className="sm:w-3/4 h-full object-cover py-4 px-4"/>
+      </motion.div>
       <motion.section 
         initial={{ opacity: 0}}
         whileInView={{ opacity: 1 }}

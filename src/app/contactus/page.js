@@ -6,6 +6,8 @@ import emailjs from 'emailjs-com';
 import Navbar from "@/components/Navbar";
 import ContactInfo from "@/components/ContactInfo";
 import Footer from "@/components/Footer";
+import Image from "next/image"
+import Head from "next/head"
 
 const ContactUs = () => {
   const [verified, setVerified] = useState(false);
@@ -80,10 +82,16 @@ const ContactUs = () => {
 
   return (
     <container className="flex flex-col gap-2 justify-center items-center py-10">
+      <Head>
+        <title>Contact Us</title>
+        <meta name="description" content="Feel free to contact us anytime. We will get back to you as soon as we can."/>
+      </Head>
       <Navbar />
-      <img
+      <Image 
         src="/assets/shipaerial.jpg"
         alt="Ship Aerial View"
+        width={1500}
+        height={900}
         className="w-full h-[40vh] object-cover parallax z-10"
         data-speed="0.5"
       />

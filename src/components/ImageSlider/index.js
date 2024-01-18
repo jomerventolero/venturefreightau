@@ -70,9 +70,11 @@ const ImageSlider = () => {
       ></div>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className='w-full h-full bg-center bg-cover transition-all duration-500 fade-in hover:scale-125'
+        className='w-full h-full bg-center bg-cover transition-all duration-500 ease-in-out fade-in hover:scale-125'
       >
-        <motion.a href="/carbon-footprint" className="cursor-pointer hover:underline absolute z-50 top-18 text-center pt-10 sm:px-40 text-white drop-shadow-2xl text-4xl font-bold">{slides[currentIndex].header}</motion.a>
+        <motion.a href="/carbon-footprint" className="cursor-pointer hover:underline absolute z-50 top-96 sm:top-18  text-center pt-10 sm:px-40 text-white drop-shadow-2xl text-xl font-bold">{slides[currentIndex].header}
+        </motion.a>
+
       </div>
 
       {/* Left Arrow */}

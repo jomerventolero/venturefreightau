@@ -4,10 +4,19 @@ import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
 import { FaShip, FaPlane, FaTruck } from "react-icons/fa";
 import Image from "next/image";
+import Head from "next/head";
 
 const CargoInsurance = () => {
   return (
     <div className="pt-10">
+      <Head>
+        <title>Venture Freight - Cargo Insurance</title>
+        <meta name="description" content="Venture Freight Australia’s innovative cargo insurance and loss
+            prevention solutions not only insure your goods during transit, it
+            helps you safely navigate the rough waters of today’s global shipping
+            industry, from port to port, from warehouse to warehouse or from door
+            to door." />
+      </Head>
       <Navbar />
       <Image src="/assets/breadcrums.jpg" width={1500} height={800} alt="bread" className="w-screen h-[30vh] object-cover" dragabble={false}/>
       <div className="container mx-auto items-center align-middle justify-center">

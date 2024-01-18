@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { useEffect } from 'react'
+import Head from 'next/head'
 
 const CustomsBrokerage = () => {
     useEffect(() => {
@@ -25,6 +26,12 @@ const CustomsBrokerage = () => {
       }, []);
   return (
     <div className="pt-18 ">
+        <Head>
+        <title>Venture Freight - Customs Brokerage</title>
+        <meta name="description" content="The most economical way to fulfil your promises across the globe would be sending your freight by sea. We have the expertise to organize your shipment ranging from single pallet loads and container loads to automobiles, boats and large equipment that might not fit a container, our professional and efficient services ensure that our satisfied customers return to Venture Freight all the time for their shipping needs. We provide documentation advice, packing services, warehousing and storage, project shipping and much more. We cater to the shipping needs of most industries and will work tirelessly to work out the most cost effective method to get your freight to its destination.<br />
+            Venture Freight’s international pricing team negotiates for the best deals on ocean freight shipping across the globe on a daily basis. Therefore you can always rest easy and know that you did it with the best possible deal available out there.<br/>
+            Send an enquiry our way to find out how we can help you reduce your freight bill." />
+      </Head>
         <Navbar />
         <Image src="/assets/aerialview.jpg" alt="Customs Brokerage" data-speed="0.5" width={1500} height={900} className="parallax w-screen h-[30vh] object-cover"/>
         <motion.div 

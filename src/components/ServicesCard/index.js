@@ -146,7 +146,7 @@ const ServicesCard = () => {
         }}
         className="bg-white flex flex-row justify-center items-center align-middle"
       >
-        <div className={`${domestic ? "border-blue-500 border-2" : ""} cursor-pointer flex flex-col sm:w-80 sm:h-40 w-20 h-20 p-5 m-2 border-[1px] border-slate-400 items-center `} onClick={() => {setdomestic(!domestic), setwarehousing(false), setproject(false)}}>
+        <div className={`${domestic ? "border-blue-500 border" : ""} cursor-pointer flex flex-col sm:w-80 sm:h-40 w-20 h-20 p-5 m-2 border-[1px] border-slate-400 items-center `} onClick={() => {setdomestic(!domestic), setwarehousing(false), setproject(false)}}>
           <Image src="/icons/domestic-transportation.png" alt="domestic-transportation" width={59} height={34} className="self-center"/>
           <h1 className={`text-2xl font-bold ${domestic ? "underline" : ""} hidden sm:block`}>Domestic Transportation</h1>
         </div>
