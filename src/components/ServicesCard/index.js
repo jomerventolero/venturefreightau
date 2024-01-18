@@ -146,15 +146,15 @@ const ServicesCard = () => {
         }}
         className="bg-white flex flex-row justify-center items-center align-middle"
       >
-        <div className={`${domestic ? "border-blue-500 border" : ""} cursor-pointer flex flex-col sm:w-80 sm:h-40 w-20 h-20 p-5 m-2 border-[1px] border-slate-400 items-center `} onClick={() => {setdomestic(!domestic), setwarehousing(false), setproject(false)}}>
+        <div className={`${domestic ? "bg-slate-300" : ""} cursor-pointer flex flex-col sm:w-80 sm:h-40 w-20 h-20 p-5 m-2 border-[1px] border-slate-400 items-center `} onClick={() => {setdomestic(!domestic), setwarehousing(false), setproject(false)}}>
           <Image src="/icons/domestic-transportation.png" alt="domestic-transportation" width={59} height={34} className="self-center"/>
           <h1 className={`text-2xl font-bold ${domestic ? "underline" : ""} hidden sm:block`}>Domestic Transportation</h1>
         </div>
-        <div className={`${warehousing ? "border-blue-500 border-2" : ""} cursor-pointer flex flex-col sm:w-80 sm:h-40 w-20 h-20 p-5 m-2 border-[1px] border-slate-400 items-center ${warehousing ? "border-blue-500" : ""}`} onClick={() => {setwarehousing(!warehousing), setdomestic(false), setproject(false)}}>
+        <div className={`${warehousing ? "bg-slate-300" : ""} cursor-pointer flex flex-col sm:w-80 sm:h-40 w-20 h-20 p-5 m-2 border-[1px] border-slate-400 items-center ${warehousing ? "border-blue-500" : ""}`} onClick={() => {setwarehousing(!warehousing), setdomestic(false), setproject(false)}}>
           <Image src="/icons/warehousing-services.png" alt="warehousing-services" width={72} height={38} className="self-center"/>
           <h1 className={`text-2xl font-bold ${warehousing ? "underline" : ""} hidden sm:block`}>Warehousing Services</h1>
         </div>
-        <div className={`${project ? "border-blue-500 border-2" : ""} cursor-pointer flex flex-col sm:w-80 sm:h-40 w-20 h-20 p-5 m-2 border-[1px] border-slate-400 items-center ${project ? "border-blue-500" : ""}`} onClick={() => {setproject(!project), setdomestic(false), setwarehousing(false)}}>
+        <div className={`${project ? "bg-slate-300" : ""} cursor-pointer flex flex-col sm:w-80 sm:h-40 w-20 h-20 p-5 m-2 border-[1px] border-slate-400 items-center ${project ? "border-blue-500" : ""}`} onClick={() => {setproject(!project), setdomestic(false), setwarehousing(false)}}>
           <Image src="/icons/project-logistics.png" alt="project-logistics" width={41} height={38} className="self-center"/>
           <h1 className={`text-2xl font-bold ${project ? "underline" : ""} hidden sm:block`}>Project Logistics</h1>
         </div>
