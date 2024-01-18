@@ -62,11 +62,12 @@ const CarbonFootprint = () => {
           viewport={{ once:true }}
           className="flex flex-col sm:flex-row pt-5 sm:gap-8 sm:pt-20 justify-center"
         >
+          <Image src="/assets/about-us.jpg" alt="Digitalization" width={500} height={300} className="sm:m-10 m-2 rounded-lg drop-shadow-2xl shadow-2xl hidden sm:block"/>
           <div>
             <h1 className="text-2xl font-bold">Our Commitment to Digitalization and Sustainability</h1>
             <p className="pt-5 sm:text-start text-justify">At Venture Freight Australia, we understand the profound impact our business practices can have on the environment. Through our unwavering commitment to digitalization and sustainability, we have transformed our business processes into an efficient and entirely paperless system. We have bid farewell to the days of excessive printing, cumbersome storage, and the environmental burden of paper disposal.</p>
           </div>
-          <Image src="/assets/about-us.jpg" alt="Digitalization" width={500} height={300} className="sm:m-10 m-2 rounded-lg drop-shadow-2xl shadow-2xl"/>
+          <Image src="/assets/about-us.jpg" alt="Digitalization" width={500} height={300} className="block sm:hidden sm:m-10 m-2 rounded-lg drop-shadow-2xl shadow-2xl"/>
         </motion.div>
 
         {/* Add more motion-animated content here */}
