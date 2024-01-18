@@ -90,8 +90,8 @@ const ContactUs = () => {
       <Image 
         src="/assets/shipaerial.jpg"
         alt="Ship Aerial View"
-        width={1500}
-        height={900}
+        width={1300}
+        height={500}
         className="w-full h-[40vh] object-cover parallax z-10"
         data-speed="0.5"
       />
