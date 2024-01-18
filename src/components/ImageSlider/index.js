@@ -12,6 +12,10 @@ const ImageSlider = () => {
       header: "",
     },
     {
+      url: '/assets/footprint.jpg',
+      header: 'Reducing our carbon footprint in our effort for sustainability',
+    },
+    {
       url: '/assets/pexels2.jpg',
       header: "",
     },
@@ -19,10 +23,7 @@ const ImageSlider = () => {
       url: '/assets/pexels3.jpg',
       header: "",
     },
-    {
-      url: '/assets/footprint.jpg',
-      header: 'Reducing our carbon footprint in our effort for sustainability',
-    }
+    
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
