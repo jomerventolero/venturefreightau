@@ -227,9 +227,10 @@ const ToolsResources = () => {
                     Incoterms
                 </div>
                 <div class="collapse-content"> 
-                    <Image src="/assets/incoterms.png" width="1500" height="800" className="self-center w-[800px]" draggable={false}/>
+                    <Image src="/assets/incoterms-2020.png" width="1500" height="1000" className="self-center w-[800px]" draggable={false}/>
                     <p>
-                        <span className="text-slate-600">From 1 January 2011 onwards, revised Incoterms will come into effect worldwide.</span><br/><br/>
+                        <span className="text-slate-600">From 1 January 2011 onwards, revised Incoterms will come into effect worldwide.</span><a href="/assets/incoterms-2020.png" target="_blank" rel="noreferrer" className="hover:text-blue-500"> (Download Incoterms) </a><br/><br/>
+                        
                         <span>
                         Instead of 13 clauses, there will only be 11 and divided into two categories. Clauses for all types of transport: EXW, FCA, CPT, CIP, DAT, DAP, DDP Clauses for sea and inland water transport: FAS, FOB, CFR, and CIF The picture above describes the various incoterms and their respective definitions, please <a href="/contactus" className="hover:underline text-blue-500 cursor-pointer">contact us</a> should you require clarification
                         </span>

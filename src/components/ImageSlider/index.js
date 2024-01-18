@@ -8,20 +8,29 @@ import Image from 'next/image'
 const ImageSlider = () => {
   const slides = [
     {
-      url: '/assets/pexels1.jpg',
-      header: "",
+      url: '/assets/shipglobal.jpg',
+      header: "Container Tracking",
+      location: "",
     },
     {
       url: '/assets/footprint.jpg',
       header: 'Reducing our carbon footprint in our effort for sustainability',
+      location: "carbon-footprint",
+    },
+    {
+      url: '/assets/shiprear.jpg',
+      header: "Bulk Shipping",
+      location: "",
     },
     {
       url: '/assets/pexels2.jpg',
       header: "",
+      location: "",
     },
     {
       url: '/assets/pexels3.jpg',
       header: "",
+      location: "",
     },
     
   ];
@@ -73,18 +82,22 @@ const ImageSlider = () => {
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className='w-full h-full bg-center bg-cover transition-all duration-500 ease-in-out fade-in hover:scale-125'
       >
-        <motion.a href="/carbon-footprint" className="cursor-pointer hover:underline absolute z-50 top-96 sm:top-18  text-center pt-10 sm:px-40 text-white drop-shadow-2xl text-xl font-bold">{slides[currentIndex].header}
+        <motion.a 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: .5, type: "fadeIn" }}
+          href={slides[currentIndex].location} className="cursor-pointer hover:underline absolute z-50 top-96 sm:top-18  text-center pt-10 sm:px-40 text-white drop-shadow-2xl text-xl font-bold">{slides[currentIndex].header}
         </motion.a>
 
       </div>
 
       {/* Left Arrow */}
-      <div className='group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+      <div className='group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 sm:-left-28 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
         <BsChevronCompactLeft onClick={prevSlide} size={30} />
       </div>
 
       {/* Right Arrow */}
-      <div className='group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+      <div className='group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 sm:-right-28 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
         <BsChevronCompactRight onClick={nextSlide} size={30} />
       </div> 
       {/* Dots 
