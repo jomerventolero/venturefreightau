@@ -1,29 +1,19 @@
 "use client"
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
-import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { useEffect } from 'react'
 import Head from 'next/head'
+import useParallax from '@/utils/parallax'
+
+import { useEffect } from 'react'
+import { motion } from 'framer-motion'
 
 const CustomsBrokerage = () => {
-    useEffect(() => {
-        const handleScroll = () => {
-          const scrollValue = window.scrollY;
-          const parallaxElements = document.querySelectorAll('.parallax');
-          
-          parallaxElements.forEach(element => {
-            const speed = element.dataset.speed;
-            element.style.transform = `translateY(${scrollValue * speed}px)`;
-          });
-        };
-    
-        window.addEventListener('scroll', handleScroll);
-    
-        return () => {
-          window.removeEventListener('scroll', handleScroll);
-        };
-      }, []);
+
+  useEffect(() => {
+    useParallax();
+  }, []);
+
   return (
     <div className="pt-18 ">
         <Head>

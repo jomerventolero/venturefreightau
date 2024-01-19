@@ -21,7 +21,7 @@ const ImageSlider = () => {
     {
       url: '/assets/shiprear.jpg',
       header: "Bulk Shipping Excellence: Redefining the Movement of Goods",
-      location: "",
+      location: "bulk-shipping",
     },
     {
       url: '/assets/pexels2.jpg',
@@ -81,7 +81,7 @@ const ImageSlider = () => {
       ></div>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className='w-full h-full bg-center bg-cover transition-all duration-500 ease-in-out fade-in hover:scale-125'
+        className='w-full h-full bg-center bg-cover transition-all duration-500 ease-in-out fade-in sm:hover:scale-125'
       >
         
       </div>

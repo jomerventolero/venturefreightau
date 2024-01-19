@@ -1,8 +1,11 @@
 "use client"
-import { motion } from 'framer-motion'
-import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Footer from '../Footer'
+import useParallax from '@/utils/parallax'
+
+
+import { motion } from 'framer-motion'
+import { useEffect, useState } from 'react'
 
 
 const ServicesCard = () => {
@@ -12,21 +15,7 @@ const ServicesCard = () => {
   const [project, setproject] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollValue = window.scrollY;
-      const parallaxElements = document.querySelectorAll('.parallax');
-      
-      parallaxElements.forEach(element => {
-        const speed = element.dataset.speed;
-        element.style.transform = `translateY(${scrollValue * speed}px)`;
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    useParallax();
   }, []);
 
   return (

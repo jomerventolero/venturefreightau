@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const CarbonFootprint = () => {
   return (
-    <div className="">
+    <div>
       <Navbar />
       <article className="pt-16 sm:pt-20 px-5 sm:px-20">
         <motion.h1
@@ -31,7 +31,7 @@ const CarbonFootprint = () => {
           >
               In a world where the environment is facing unprecedented challenges, the role of businesses in adopting sustainable practices cannot be overstated. One significant contributor to environmental degradation is the rapid deforestation driven by the demand for paper. The repercussions of harvesting trees for paper production extend far beyond the visible depletion of forests. The negative impact on wildlife populations and the increased risk of major soil erosion are among the ecological consequences that demand our attention.
               <br/><br/>
-              <h1 className="text-2xl font-bold">The Hidden Costs of Paper Production</h1>
+              <span className="text-2xl font-bold">The Hidden Costs of Paper Production</span>
               <br/>
               <span>
                 The widespread use of paper has led to its designation as a substantial component of municipal solid waste in facilities nationwide. The process of paper production involves not only the harvesting of trees but also extensive energy consumption and the release of pollutants into the air and water. Moreover, the disposal of paper waste poses a considerable challenge, contributing to landfills and further straining our waste management systems.
@@ -60,7 +60,7 @@ const CarbonFootprint = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
           viewport={{ once:true }}
-          className="flex flex-col sm:flex-row pt-5 sm:gap-8 sm:pt-20 justify-center"
+          className="flex flex-col sm:flex-row pt-5 sm:gap-8 sm:pt-20 content-center justify-center"
         >
           <Image src="/assets/about-us.jpg" alt="Digitalization" width={600} height={400} className="aspect-auto sm:m-10 m-2 rounded-lg drop-shadow-2xl shadow-2xl hidden sm:block"/>
           <div>

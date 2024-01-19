@@ -1,12 +1,20 @@
 "use client"
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import { motion } from "framer-motion";
-import { FaShip, FaPlane, FaTruck } from "react-icons/fa";
 import Image from "next/image";
 import Head from "next/head";
+import useParallax from "@/utils/parallax";
+
+import { motion } from "framer-motion";
+import { FaShip, FaPlane, FaTruck } from "react-icons/fa";
+import { useEffect } from "react";
 
 const CargoInsurance = () => {
+  
+    useEffect(() => {
+      useParallax()
+  }, []);
+
   return (
     <div className="pt-10">
       <Head>
@@ -18,7 +26,7 @@ const CargoInsurance = () => {
             to door." />
       </Head>
       <Navbar />
-      <Image src="/assets/breadcrums.jpg" width={1500} height={800} alt="bread" className="w-screen h-[30vh] object-cover" dragabble={false}/>
+      <Image src="/assets/breadcrums.jpg" width={1500} height={800} alt="bread" className="w-screen h-[30vh] object-cover parallax" data-speed="0.5" dragabble={false}/>
       <div className="container mx-auto items-center align-middle justify-center">
         <motion.div
             initial={{ opacity: 0, y: -50 }}
