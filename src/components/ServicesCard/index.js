@@ -69,7 +69,7 @@ const ServicesCard = () => {
         Send an enquiry our way to find out how we can help you reduce your freight bill.
         </section>
         <div className="bg-slate-100 mx-5 sm:mx-36 my-4">
-          <div className="collapse bg-base-200 w-full sm:w-3/4">
+          <div className="collapse w-full sm:w-3/4">
             <input type="radio" name="my-accordion-2" /> 
             <div className="collapse-title text-xl font-medium">
               Q: Why should I consider Venture Freight as my customs broker?
@@ -81,7 +81,7 @@ const ServicesCard = () => {
               2. Integrity – We are vigilant in keeping current on all import and export regulations that are set by the various governing bodies. This enables us to ensure that our customer’s goods are customs cleared in the most effective and competitive manner.</p>
             </div>
           </div>
-          <div className="collapse bg-base-200 w-3/4">
+          <div className="collapse w-3/4">
             <input type="radio" name="my-accordion-2" /> 
             <div className="collapse-title text-xl font-medium">
               Q: What is a customs broker?
@@ -92,7 +92,7 @@ const ServicesCard = () => {
               </p>
             </div>
           </div>
-          <div className="collapse bg-base-200 w-3/4">
+          <div className="collapse w-3/4">
             <input type="radio" name="my-accordion-2" /> 
             <div className="collapse-title text-xl font-medium">
               Q. Clearance of my merchandise: What do I need?
@@ -113,7 +113,7 @@ const ServicesCard = () => {
               </p>
             </div>
           </div>
-          <div className="collapse bg-base-200 w-3/4">
+          <div className="collapse w-3/4">
             <input type="radio" name="my-accordion-2" /> 
             <div className="collapse-title text-xl font-medium">
               Q: What is a customs broker?
@@ -124,7 +124,7 @@ const ServicesCard = () => {
               </p>
             </div>
           </div>
-          <div className="collapse bg-base-200 w-3/4">
+          <div className="collapse w-3/4">
             <input type="radio" name="my-accordion-2" /> 
             <div className="collapse-title text-xl font-medium">
               Q: When is the best time to talk to your Customs Broker?
