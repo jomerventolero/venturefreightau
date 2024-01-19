@@ -41,7 +41,7 @@ const ServicesCard = () => {
         Send an enquiry our way to find out how we can help you reduce your freight bill.
         </motion.section>
       </div>
-      <Image src="/assets/air-freight.jpg" alt="Sea Freight" width={1500} height={900} className="parallax w-screen h-[100vh] sm:h-[30vh] object-cover -z-10" data-speed="0.2"/>
+      <Image src="/assets/air-freight.jpg" alt="Sea Freight" width={1500} height={900} className="parallax w-screen h-[100vh] sm:h-[30vh] object-cover z-10" data-speed="0.2"/>
       <div className="bg-white z-40 pb-52 py-8">
         <h1 className="px-5 sm:px-40 text-2xl font-semibold">Air Freight</h1>
         <motion.section className="px-5 sm:px-40 ">
