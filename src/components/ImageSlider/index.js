@@ -11,7 +11,7 @@ const ImageSlider = () => {
     {
       url: '/assets/shipglobal.jpg',
       header: "Smart Logistics: Transforming Shipping Operations with Container Tracking",
-      location: "",
+      location: "container-tracking",
     },
     {
       url: '/assets/footprint.jpg',
