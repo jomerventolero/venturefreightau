@@ -26,7 +26,6 @@ export default function Home() {
         <BoxCollection />
         <LandingSection />
         <CardCollection />
-        <RequestQuote />
         <Footer />
       </main>
       {isLoading && <Loader />}
