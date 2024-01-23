@@ -9,7 +9,6 @@ const roboto = Roboto({
 })
 
 export const metadata = {
-  icons: [{ rel: 'icon', href: '/favicon.ico' }],
   title: 'Venture Freight Australia',
   description: 'We take the complicated out of your Logistics needs. Australian Leading Freight Forwarder, Customs Broker, Freight forwarder Australia, Venture Freight Australia',
 }

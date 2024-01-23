@@ -19,27 +19,30 @@ const ServicesCard = () => {
   }, []);
 
   return (
-    <container className="flex flex-col gap-4 justify-center text-slate-600 bg-white">
+    <div className="flex flex-col gap-4 justify-center text-slate-600 bg-white">
       
       <Image src="/assets/sea-freight.jpg" alt="Sea Freight" width={1500} height={900} className="parallax w-screen h-[30vh] object-cover" data-speed="0.5"/>
       <div className="bg-white z-40 py-8">
         <h1 className="px-5 sm:px-40 text-2xl font-semibold">Sea Freight</h1>
-        <motion.section className="px-5 sm:px-40 ">
+        <motion.p className="px-5 sm:px-40 ">
         The most economical way to fulfil your promises across the globe would be sending your freight by sea. We have the expertise to organize your shipment ranging from single pallet loads and container loads to automobiles, boats and large equipment that might not fit a container, our professional and efficient services ensure that our satisfied customers return to Venture Freight all the time for their shipping needs. We provide documentation advice, packing services, warehousing and storage, project shipping and much more. We cater to the shipping needs of most industries and will work tirelessly to work out the most cost effective method to get your freight to its destination.<br />
         Venture Freight’s international pricing team negotiates for the best deals on ocean freight shipping across the globe on a daily basis. Therefore you can always rest easy and know that you did it with the best possible deal available out there.<br/>
         Send an enquiry our way to find out how we can help you reduce your freight bill.
-        </motion.section>
+        </motion.p>
       </div>
+
       <Image src="/assets/air-freight.jpg" alt="Sea Freight" width={1500} height={900} className="parallax w-screen h-[100vh] sm:h-[30vh] object-cover z-10" data-speed="0.2"/>
+      
       <div className="bg-white z-40 pb-52 py-8">
         <h1 className="px-5 sm:px-40 text-2xl font-semibold">Air Freight</h1>
-        <motion.section className="px-5 sm:px-40 ">
+        <motion.p className="px-5 sm:px-40 ">
         During today’s fast-paced community everyone needs every little thing the previous day. We at Venture Freight know that air freight services are crucial to a variety of different businesses. Therefore, we organise all deliveries with the utmost priority especially when it is time to deliver your air cargo to you. <br/>
         In addition to this, we monitor every shipment with great scrutiny making sure that your air cargo does not incur any additional costs such as storage charges or waiting time at the airport in Australia. This is why our clients repeatedly trust us with their time sensitive cargo.<br/>
         Due to our daily dealings with the airlines, Venture Freight’s international pricing team have access to the best industry international air freight rates available. <br/>
         Find out more by dropping us an enquiry today.
-        </motion.section>
+        </motion.p>
       </div>
+
       <Image src="/assets/aerialview.jpg" alt="Customs Brokerage" width={1500} height={900} className="w-screen h-[30vh] object-cover"/>
       <motion.div 
         initial={{ opacity: 0, y: -50 }}
@@ -52,11 +55,11 @@ const ServicesCard = () => {
         className="bg-white z-40"
       >
         <h1 className="px-5 sm:px-40 text-2xl font-semibold">Customs Brokerage</h1>
-        <section className="px-5 sm:px-40">
+        <p className="px-5 sm:px-40">
         The most economical way to fulfil your promises across the globe would be sending your freight by sea. We have the expertise to organize your shipment ranging from single pallet loads and container loads to automobiles, boats and large equipment that might not fit a container, our professional and efficient services ensure that our satisfied customers return to Venture Freight all the time for their shipping needs. We provide documentation advice, packing services, warehousing and storage, project shipping and much more. We cater to the shipping needs of most industries and will work tirelessly to work out the most cost effective method to get your freight to its destination.<br />
         Venture Freight’s international pricing team negotiates for the best deals on ocean freight shipping across the globe on a daily basis. Therefore you can always rest easy and know that you did it with the best possible deal available out there.<br/>
         Send an enquiry our way to find out how we can help you reduce your freight bill.
-        </section>
+        </p>
         <div className="bg-slate-100 mx-5 sm:mx-36 my-4">
           <div className="collapse w-full sm:w-3/4">
             <input type="radio" name="my-accordion-2" /> 
@@ -211,7 +214,7 @@ const ServicesCard = () => {
         </div>
       </motion.div>
       <Footer />
-    </container>
+    </div>
   )
 }
 
