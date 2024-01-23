@@ -1,7 +1,9 @@
 "use client";
 import { FaGlobeAsia } from "react-icons/fa";
-import ReCAPTCHA from 'react-google-recaptcha';
 import { useState, useEffect } from 'react';
+
+import useParallax from "@/utils/parallax";
+import ReCAPTCHA from 'react-google-recaptcha';
 import emailjs from 'emailjs-com';
 import Navbar from "@/components/Navbar";
 import ContactInfo from "@/components/ContactInfo";
@@ -63,21 +65,7 @@ const ContactUs = () => {
   };
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollValue = window.scrollY;
-      const parallaxElements = document.querySelectorAll('.parallax');
-      
-      parallaxElements.forEach(element => {
-        const speed = element.dataset.speed;
-        element.style.transform = `translateY(${scrollValue * speed}px)`;
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    useParallax();
   }, []);
 
   return (

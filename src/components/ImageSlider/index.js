@@ -42,7 +42,6 @@ const ImageSlider = () => {
     const interval = setInterval(() => {
       nextSlide();
     }, 5000);
-    console.log(slides[(currentIndex - 1 + slides.length) % slides.length])
     return () => clearInterval(interval);
   })
 
