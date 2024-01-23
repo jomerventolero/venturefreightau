@@ -58,7 +58,7 @@ const Testimonials = () => {
         <h1 className="font-roboto font-semibold text-2xl text-blue-500 self-center flex flex-row gap-2">Testimonials<VscFeedback /></h1>
         <div id="item1"  className="w-3/4 flex flex-col gap-4 justify-center self-center">
           <div className="text-center text-lg">"{testimonials[testimonyNum].testimony}"</div>
-          <div className="text-center text-xl font-bold">{testimonials[testimonyNum].customer}</div>
+          <div className="text-center text-xl font-bold"><span className="font-normal">by</span> {testimonials[testimonyNum].customer}</div>
         </div>
       </motion.div>
       <div className="flex justify-center w-full py-5 sm:py-8 gap-2">
