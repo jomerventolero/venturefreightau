@@ -1,35 +1,23 @@
 "use client"
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
-import { motion } from 'framer-motion'
+import useParallax from '@/utils/parallax'
 import Image from 'next/image'
+
+import { motion } from 'framer-motion'
 import { useEffect } from 'react'
 import { FaCalculator, FaCalendar, FaPlane, FaShip, FaTable, FaTruck } from 'react-icons/fa'
 
 const ToolsResources = () => {
   
     useEffect(() => {
-        const handleScroll = () => {
-          const scrollValue = window.scrollY;
-          const parallaxElements = document.querySelectorAll('.parallax');
-          
-          parallaxElements.forEach(element => {
-            const speed = element.dataset.speed;
-            element.style.transform = `translateY(${scrollValue * speed}px)`;
-          });
-        };
-    
-        window.addEventListener('scroll', handleScroll);
-    
-        return () => {
-          window.removeEventListener('scroll', handleScroll);
-        };
+        useParallax();
       }, []);
 
   return (
     <container className="flex flex-col gap-4 justify-center">
         <Navbar />
-        <Image src="/assets/freightgraph.jpg" width={1500} height={800} alt="resources" className="parallax w-screen h-[30vh] object-cover sm:mt-18"/>
+        <Image src="/assets/freightgraph.jpg" width={1500} height={800} alt="resources" className="parallax w-screen h-[50vh] object-cover sm:mt-18" data-speed="0.5" draggable="false"/>
         <div
           className="mx-10 sm:mx-40 flex flex-col gap-4"
         >

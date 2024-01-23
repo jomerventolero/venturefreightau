@@ -1,6 +1,7 @@
 "use client"
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
+import { VscFeedback } from "react-icons/vsc";
 
 const Testimonials = () => {
 
@@ -43,7 +44,7 @@ const Testimonials = () => {
       }
     }, 5000);
     return () => clearInterval(interval);
-  }, [])
+  }, [testimonyNum])
 
   return (
     <container>
@@ -54,9 +55,9 @@ const Testimonials = () => {
         viewport={{ once: true }}
         className="w-full flex flex-col gap-4 justify-center pt-8"
       >
-        <h1 className="font-roboto font-semibold text-2xl text-blue-500 self-center">Testimonials</h1>
-        <div id="item1"  className="w-full flex flex-col gap-4 justify-center">
-          <div className="text-center text-lg">{testimonials[testimonyNum].testimony}</div>
+        <h1 className="font-roboto font-semibold text-2xl text-blue-500 self-center flex flex-row gap-2">Testimonials<VscFeedback /></h1>
+        <div id="item1"  className="w-3/4 flex flex-col gap-4 justify-center self-center">
+          <div className="text-center text-lg">"{testimonials[testimonyNum].testimony}"</div>
           <div className="text-center text-xl font-bold">{testimonials[testimonyNum].customer}</div>
         </div>
       </motion.div>

@@ -191,7 +191,7 @@ const ContactUs = () => {
               />
               <button
                 type="submit"
-                className={`bg-white drop-shadow-2xl rounded-xl m-4 px-4 py-2 `}
+                className={`font-medium drop-shadow-2xl rounded-xl m-4 px-4 py-2 ${verified ? "cursor-pointer bg-blue-400 text-white hover:bg-blue-300" : "cursor-not-allowed bg-white text-black"}`}
                 disabled={!verified}
               >
                 Submit
