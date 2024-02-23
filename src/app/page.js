@@ -9,7 +9,7 @@ import Loader from '@/components/Loader'
 import Head from 'next/head'
 
 import { useRouter } from "next/navigation";
-import Testimonials from '@/components/Testimonials'
+import { CardStackDemo } from '@/components/CardStackDemo'
 
 export default function Home() {
   const router = useRouter()
@@ -27,7 +27,7 @@ export default function Home() {
         <BoxCollection />
         <LandingSection />
         <CardCollection />
-        <Testimonials />
+        <CardStackDemo />
         <Footer />
       </main>
       {isLoading && <Loader />}
