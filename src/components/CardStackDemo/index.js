@@ -12,7 +12,7 @@ export function CardStackDemo() {
             whileInView={{ opacity: 1, y: -50 }}
             transition={{ type: "spring", duration: 0.5 }}
             viewport={{ once: true }}
-            className="w-full flex flex-col gap-4 justify-center z-50"
+            className="w-full flex flex-col gap-4 justify-center z-10"
         >
             <h1 className="font-roboto font-semibold text-2xl text-blue-500 self-center flex flex-row gap-2">Testimonials<VscFeedback /></h1>
         </motion.div>
