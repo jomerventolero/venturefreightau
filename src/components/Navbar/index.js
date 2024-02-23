@@ -13,10 +13,9 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="fixed z-50 top-0 bg-white w-screen h-14 sm:h-16 drop-shadow-xl items-center flex flex-row justify-between px-2 sm:px-5 ">
+    <nav className="fixed z-50 top-0 bg-white w-screen h-14 sm:h-16 items-center flex flex-row justify-between px-2 sm:px-5 ">
         <logo className="flex flex-row cursor-pointer" onClick={() => window.location.href = "/"}>
-            <Image src="/logo/logo-color.png" alt="logo" width={50} height={50} className="object-contain m-2 self-center align-middle"/>
-            <h1 className="font-bold text-slate-700">Venture Freight Australia</h1>
+            <Image src="/assets/headsup.png" alt="logo" width={350} height={250} className="object-contain m-2 self-center align-middle"/>
         </logo>
         <ul className="text-slate-600 font-bold sm:flex hidden items-center">
             <a className="hover:bg-slate-700 hover:text-white transition-colors duration-300 ease-in-out p-5" href="/">Home</a>
