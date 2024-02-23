@@ -68,7 +68,7 @@ const ImageSlider = () => {
 
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className='w-full h-full bg-center bg-cover transition-all duration-500 ease-in-out fade-in sm:hover:scale-110 items-center flex justify-center text-2xl hover:text-4xl hover:bg-black '
+        className='w-full h-full bg-center bg-cover transition-all duration-500 ease-in-out fade-in sm:hover:scale-110 items-center flex justify-center text-2xl hover:text-4xl hover:bg-black opacity-90'
       >
         
       </div>
