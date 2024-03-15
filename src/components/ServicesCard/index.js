@@ -5,7 +5,7 @@ import useParallax from '@/utils/parallax'
 
 
 import { motion } from 'framer-motion'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 
 const ServicesCard = () => {
@@ -14,9 +14,7 @@ const ServicesCard = () => {
   const [warehousing, setwarehousing] = useState(false)
   const [project, setproject] = useState(false)
 
-  useEffect(() => {
-    useParallax();
-  }, []);
+  useParallax();
 
   return (
     <div className="flex flex-col gap-4 justify-center text-slate-600 bg-white">
