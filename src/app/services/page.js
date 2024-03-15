@@ -9,7 +9,8 @@ const Services = () => {
     <div>
         <Head>
           <title>Venture Freight - Services</title>
-          <meta name="description" content="Venture Freight provides comprehensive and economical sea freight services globally, expertly managing shipments of various sizes and types, including documentation, packing, warehousing, and project shipping. With a commitment to customer satisfaction, they ensure clients return for their shipping needs. The international pricing team secures optimal daily deals for ocean freight, offering a reliable and cost-effective solution. In the realm of air freight, Venture Freight prioritizes time-sensitive deliveries, monitoring shipments to prevent additional costs. Their customs brokerage services further enhance global shipping efficiency. Clients are encouraged to inquire about reducing freight bills, emphasizing Venture Freight's commitment to customer success." />
+          <meta name="description" content="Venture Freight Australia is an accredited freight forwarding company by Australian Customs Service and Australian Quarantine and Inspection Service (AQIS). Our speciality is making sure that every customs entry is compliant with the various Australian governing bodies and the shipments that we handle are cleared and delivered to the highest service level." />
+          <meta name="keywords" content="freight forwarding, customs, quarantine, inspection, australian, customs service" />
         </Head>
         <Navbar />
         <ServicesCard />        
