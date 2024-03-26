@@ -36,6 +36,14 @@ const ContactUs = () => {
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
+  const sendEmailActions = async (e) => {
+    e.preventDefault();
+
+    const data = {
+      
+    }
+  }
+
   const sendEmail = async (e) => {
     e.preventDefault();
 
