@@ -26,7 +26,7 @@ export const Highlight = ({ children, className }) => {
   return (
     <span
       className={cn(
-        "font-bold bg-emerald-100 text-emerald-700 dark:bg-emerald-700/[0.2] dark:text-emerald-500 px-1 py-0.5",
+        "font-bold bg-emerald-100 text-emerald-700 dark:bg-emerald-700/[0.2] dark:text-emerald-500 px-1 py-0.5 ",
         className
       )}
     >
@@ -41,7 +41,7 @@ const CARDS = [
     name: "Food Importer",
     designation: "Client Testimonial",
     content: (
-      <p>
+      <p className="text-white">
         We are not just a number, <Highlight>personalised service and knowledge</Highlight> in clearing our food products with customs
       </p>
     )
@@ -51,7 +51,7 @@ const CARDS = [
     name: "Smart Freight",
     designation: "Client Testimonial",
     content: (
-      <p>
+      <p className="text-white">
         After comparing with other freight forwarders, your rates are the <Highlight>most competitive</Highlight> and follow up with my clients shipments are excellent
       </p>
     )
@@ -61,7 +61,7 @@ const CARDS = [
     name: "Grand Laguna",
     designation: "Client Testimonial",
     content: (
-      <p>
+      <p className="text-white">
         I was able to reduce the pricing of my products due to<Highlight> updated discounts on freight</Highlight> from Venture Freight that led to increased sales for my business!
       </p>
     )
@@ -71,7 +71,7 @@ const CARDS = [
     name: "Furniture Importer",
     designation: "Client Testimonial",
     content: (
-      <p>
+      <p className="text-white">
         No more penalties and extra charges from the wharf and shipping lines ever since I switched to <Highlight>Venture Freight</Highlight>!
       </p>
     )
@@ -81,7 +81,7 @@ const CARDS = [
     name: "NFP Organization",
     designation: "Client Testimonial",
     content: (
-      <p>
+      <p className="text-white">
         Our previous transportation company diched us they complained they were not earning enough, fortunately we found Venture Freight who were able to organize our transportation with <Highlight>savings!</Highlight>
       </p>
     )

@@ -6,6 +6,7 @@ import  useParallax  from '@/utils/parallax'
 
 import { motion } from 'framer-motion'
 import { useEffect } from 'react'
+import Head from 'next/head'
 
 
 const ContainerTracking = () => {
@@ -16,11 +17,11 @@ const ContainerTracking = () => {
 
   return (
     <div className="flex flex-col gap-4 justify-center content-center  pt-16 sm:pt-20">
+        <Head>
+            <title>Venture Freight - Container Tracking</title>
+            <meta name="description" content="How Venture Freight Tracks our Clients Container using Advance Global Tracking System" />
+        </Head>
         <Navbar />
-        
-        {
-            // Article content 
-        }
 
         <motion.article
             initial={{ opacity: 0, y: -20 }}
