@@ -15,7 +15,7 @@ const ToolsResources = () => {
       }, []);
 
   return (
-    <container className="flex flex-col gap-4 justify-center">
+    <container className="flex flex-col gap-4 justify-center bg-white text-white">
         <Navbar />
         <Image src="/assets/freightgraph.jpg" width={1500} height={800} alt="resources" className="parallax w-screen h-[50vh] object-cover sm:mt-18" data-speed="0.5" draggable="false"/>
         <div

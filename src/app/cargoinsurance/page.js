@@ -16,7 +16,7 @@ const CargoInsurance = () => {
   }, []);
 
   return (
-    <div className="pt-10">
+    <div className="pt-10 bg-white">
       <Head>
         <title>Venture Freight - Cargo Insurance</title>
         <meta name="description" content="Venture Freight Australia’s innovative cargo insurance and loss

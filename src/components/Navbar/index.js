@@ -17,14 +17,14 @@ const Navbar = () => {
         <logo className="flex flex-row cursor-pointer" onClick={() => window.location.href = "/"}>
             <Image src="/assets/headsup.png" alt="logo" width={350} height={250} className="object-contain m-2 self-center align-middle "/>
         </logo>
-        <ul className="text-slate-600 font-bold sm:flex hidden items-center">
+        <div className="text-slate-600 font-bold sm:flex hidden items-center">
             <a className="hover:bg-slate-700 hover:text-white transition-colors duration-300 ease-in-out p-5" href="/">Home</a>
             <a className="hover:bg-slate-700 hover:text-white transition-colors duration-300 ease-in-out p-5" href="about">About</a>
             <a className="hover:bg-slate-700 hover:text-white transition-colors duration-300 ease-in-out p-5" href="services">Services</a>
             <a className="hover:bg-slate-700 hover:text-white transition-colors duration-300 ease-in-out p-5" href="cargoinsurance">Cargo Insurance</a>
             <a className="hover:bg-slate-700 hover:text-white transition-colors duration-300 ease-in-out p-5" href="tools-resources">Tools and Resources</a>
             <a className="hover:bg-blue-500 transition-colors duration-300 ease-in-out px-5 mx-1 py-1 rounded-sm bg-blue-600 text-white " href="/contactus">Contact Us</a>
-        </ul>
+        </div>
         <GiHamburgerMenu className={`${!open ? "object-cover" : "hidden"} block sm:hidden`} onClick={handleClick} size="2rem"/>
         <IoCloseSharp className={`${open ? "object-cover" : "hidden"}`} onClick={handleClick} size="2rem"/>
         {open && (

@@ -78,7 +78,7 @@ const ImageSlider = () => {
             transition={{ duration: 0.8, delay: .5, type: "fadeIn" }}
             className="flex flex-col content-evenly cursor-pointer absolute z-50 top-80 sm:top-56 text-center pt-10 sm:px-40 text-white drop-shadow-[100px] text-3xl font-bold">{slides[currentIndex].header}
             <br/><br/>
-            <a className={`p-2 w-1/4 bg-blue-500 rounded-sm hover:bg-blue-600 mx-auto text-xs sm:text-lg shadow-2xl drop-shadow-2xl z-50  ${slides[currentIndex].header === "" ? "hidden" : "block"} ${slides[currentIndex].location === "" ? "hidden" : "block"}`} href={slides[currentIndex].location} >Learn More</a>
+            <a className={`p-2 w-1/4 bg-blue-500 text-white rounded-sm hover:bg-blue-600 mx-auto text-xs sm:text-lg shadow-2xl drop-shadow-2xl z-50  ${slides[currentIndex].header === "" ? "hidden" : "block"} ${slides[currentIndex].location === "" ? "hidden" : "block"}`} href={slides[currentIndex].location} >Learn More</a>
       </motion.div>
 
       {/* Left Arrow */}
