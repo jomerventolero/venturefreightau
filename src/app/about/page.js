@@ -8,7 +8,7 @@ import Head from "next/head"
 
 const about = () => { 
   return (
-    <container className="flex flex-col justify-center items-center">
+    <container className="flex flex-col justify-center items-center bg-white">
       <Head>
         <title>Why Choose Us?</title>
         <meta name="description" content="When choosing a freight forwarder to help ship your goods it is important to choose the right partner. Venture Freight is an Australian freight forwarding company that utilises internet-based technology to provide stellar freight forwarding services with a commitment to reliability, proper time delivery and long-term relationships."/>
