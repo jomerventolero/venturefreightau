@@ -31,7 +31,7 @@ const FreightShipping = () => {
         className="w-full h-[80vh] object-cover parallax z-40"
         data-speed="0.5"
       />
-      <div className="flex flex-col gap-4 items-center justify-center ">
+      <div className="flex flex-col gap-4 items-center justify-center bg-white">
         <div className="text-center z-40">
           <motion.h1 className="sm:text-9xl mb-4 text-2xl text-white font-extrabold drop-shadow-2xl"
             initial={{ opacity: 0, y: -50 }}
@@ -51,7 +51,7 @@ const FreightShipping = () => {
           Our professional and efficient services ensure that our satisfied customers return to Venture Freight all the time for their shipping needs.
         </motion.p>
       </div>
-      <container className="grid sm:grid-cols-2 grid-cols-1 gap-4 justify-center sm:text-2xl pt-40">
+      <container className="grid sm:grid-cols-2 grid-cols-1 gap-4 justify-center sm:text-2xl pt-40 bg-white">
         <article className="px-10 pt-4">
           <motion.p className="text-xs sm:text-xl text-slate-800 text-justify px-5 sm:px-20"
             initial={{ opacity: 0, y: -50 }}

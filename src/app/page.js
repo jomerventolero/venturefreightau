@@ -19,7 +19,8 @@ export default function Home() {
     <>
       <Head>
         <title>Venture Freight Australia</title>
-        <meta name="description" content="Venture Freight Australia - Your reliable partner for freight forwarding services. We provide documentation advice, packing services, warehousing, and more to meet your shipping needs. Venture Freight Australia is an accredited freight forwarding company by Australian Customs Service and Australian Quarantine and Inspection Service (AQIS). Our speciality is making sure that every customs entry is compliant with the various Australian governing bodies and the shipments that we handle are cleared and delivered to the highest service level." />
+        <meta name="description" content="Venture Freight Australia is an accredited freight forwarding company by Australian Customs Service and Australian Quarantine and Inspection Service (AQIS). Our speciality is making sure that every customs entry is compliant with the various Australian governing bodies and the shipments that we handle are cleared and delivered to the highest service level." />
+        <meta name="keywords" content="freight forwarding, freight forwarder, customs, quarantine, inspection, australian, customs service" />
       </Head>
       <main className="bg-white w-screen h-screen overflow-x-hidden">
         <Navbar />

@@ -6,7 +6,7 @@ const LandingSection = () => {
   return (
     <container className="flex flex-col sm:flex-row gap-2 sm:gap-8 justify-center bg-blue-400 w-screen h-3/4 sm:h-[500px] sm:px-20 px-4">
         <Image draggable={false} src="/assets/landingsection.jpg" alt="landingpage" width="500" height="280" className="self-center align-middle"/>
-        <section className="flex flex-col gap-4 justify-center sm:w-1/4 text-black font-semibold">
+        <section className="flex flex-col gap-4 justify-center sm:w-1/4 text-slate-700 font-semibold">
           <Image draggable={false} src="/assets/logo-white.png" alt="logo" className="self-center align-middle" width="400" height="90"/>
           <span className="hover:text-white text-xs transition-colors duration-300 ease-in-out cursor-pointer">
               Venture Freight Australia is a leading provider of technology-enabled freight forwarding serving the transportation and logistical needs of our clients. Our dedicated team business model gives each client a team of transportation professionals to be your point of contact for all your shipping needs.
