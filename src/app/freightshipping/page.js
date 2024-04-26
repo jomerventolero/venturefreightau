@@ -26,9 +26,9 @@ const FreightShipping = () => {
     <div className="relative flex flex-col">
       <Navbar />
       <img
-        src="/assets/shipaerial.jpg"
+        src="/assets/shipping.jpg"
         alt="Ship Aerial View"
-        className="w-full h-[80vh] object-cover parallax z-40"
+        className="w-full h-[80vh] object-cover  parallax z-40"
         data-speed="0.5"
       />
       <div className="flex flex-col gap-4 items-center justify-center bg-white">
