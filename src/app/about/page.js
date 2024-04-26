@@ -42,7 +42,7 @@ const about = () => {
         <h1 className="font-semibold text-slate-800">Technology-enabled freight forwarding at its best</h1>
       </motion.section>
       <h1 className="text-3xl sm:text-5xl sm:py-8 font-bold text-blue-500">ABOUT US</h1>
-      <article className="grid grid-cols-1 sm:grid-cols-3 px-4 sm:px-40 gap-8 pt-8 text-justify">
+      <article className="grid grid-cols-1 sm:grid-cols-2 px-4 sm:px-40 gap-8 pt-8 text-justify">
         <motion.span
           initial={{ opacity: 0}}
           whileInView={{ opacity: 1 }}
@@ -50,14 +50,6 @@ const about = () => {
           viewport={{ once: true }}
         >
           When choosing a freight forwarder to help ship your goods it is important to choose the right partner. Venture Freight is an Australian freight forwarding company that utilises internet-based technology to provide stellar freight forwarding services with a commitment to reliability, proper time delivery and long-term relationships.
-        </motion.span>
-        <motion.span
-          initial={{ opacity: 0}}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: .3 }}  
-          viewport={{ once: true }}          
-        >
-          Our customer service team of more than 10 years of experience in the field of freight forwarding are equipped with the knowledge of the importation of all types of cargo bound for Australia. Through our daily dealings with Australian Customs/ Quarantine and the other respective governing bodies, we are familiar with the processes required in getting the various types of cargo cleared and delivered to its destination in the shortest time possible.
         </motion.span>
         <motion.span
           initial={{ opacity: 0}}

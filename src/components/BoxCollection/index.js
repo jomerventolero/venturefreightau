@@ -10,7 +10,7 @@ const description = [
 const BoxCollection = () => {
   return (
     <div className="flex flex-col py-10 px-10 sm:flex sm:flex-row gap-8 items-center self-center align-middle place-content-center justify-center">
-        <Box title="Freight Shipping" description={description[0]} href="/freightshipping"/>
+        <Box title="Who we are" description={description[0]} href="/whoweare"/>
         <Box title="Overdimensional Cargo" description={description[1]} href="/overdimensionalcargo"/>
         <Box title="Customs Brokerage" description={description[2]} href="/customsbrokerage"/>
     </div>

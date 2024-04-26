@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import { motion } from 'framer-motion';
 
-const FreightShipping = () => {
+const WhoWeAre = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollValue = window.scrollY;
@@ -81,4 +81,4 @@ Send an enquiry our way to find out how we can help you reduce your freight bi
   );
 };
 
-export default FreightShipping;
+export default WhoWeAre;
