@@ -1,7 +1,7 @@
 "use client"
 import Navbar from '@/components/Navbar'
 import { motion } from 'framer-motion'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 const OverDimensionalCargo = () => {
 
@@ -28,20 +28,32 @@ const OverDimensionalCargo = () => {
   */}
 
   return (
-    <container>
+    <container className="flex flex-col justiy-center bg-white">
         <Navbar />
         <img
           src="/assets/overdimensionalcargo.webp"
           alt="Over dimensional cargo"
-          className="w-full h-[80vh] object-fill z-0"
+          className="sm:w-3/4 sm:h-[80vh] object-fill z-0 self-center mt-24"
+          lazyload="true"
+          draggable="false"
         />
+        <motion.div 
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.5,
+            delay: 0.2
+          }}
+          className="absolute z-50 text-5xl font-bold top-[80%] left-52 text-white hidden sm:block">
+          <h1>Over Dimensional Cargo</h1>
+        </motion.div>
         <article className="sm:px-40 py-20 flex flex-col gap-4 bg-white z-50">
             <motion.section
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="text-start text-lg sm:text-2xl text-slate-600 font-bold px-5"
+              className="text-start text-lg sm:text-2xl text-blue-400 font-bold px-5"
             >
               Over Dimensional Cargo
             </motion.section>

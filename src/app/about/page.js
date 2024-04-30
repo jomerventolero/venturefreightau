@@ -12,6 +12,7 @@ const about = () => {
       <Head>
         <title>Why Choose Us?</title>
         <meta name="description" content="When choosing a freight forwarder to help ship your goods it is important to choose the right partner. Venture Freight is an Australian freight forwarding company that utilises internet-based technology to provide stellar freight forwarding services with a commitment to reliability, proper time delivery and long-term relationships."/>
+        <meta name="keywords" content="freight forwarding, freight forwarder, customs, quarantine, inspection, australian, customs service"/>
       </Head>
       <Navbar />
       <Image src="/assets/aerialview.jpg" width={1500} height={800} alt="about" className="w-screen h-[150px] object-cover mt-[3rem] sm:mt-[4rem]"/>
