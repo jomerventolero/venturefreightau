@@ -77,7 +77,7 @@ const ContactUs = () => {
   }, []);
 
   return (
-    <container className="flex flex-col gap-2 justify-center items-center py-10">
+    <container className="flex flex-col gap-2 justify-center items-center py-10 bg-white">
       <Head>
         <title>Contact Us</title>
         <meta name="description" content="Feel free to contact us anytime. We will get back to you as soon as we can."/>
@@ -180,10 +180,10 @@ const ContactUs = () => {
                 type="text"
                 name="message"
                 placeholder="Message"
-                className="shadow rounded-xl w-full sm:w-80 h-40 p-2 hover:shadow-blue-300 transition-colors duration-300 ease-in-out"
+                className="bg-white outline-none shadow rounded-xl w-full sm:w-80 h-40 p-2 hover:shadow-blue-300 transition-colors duration-300 ease-in-out"
                 />
 
-                <select id="services" className="w-full rounded-xl p-2 drop-shadow font-sans font-semibold text-slate-600" name="services">
+                <select id="services" className="outline-none w-full rounded-xl p-2 drop-shadow font-sans font-semibold text-slate-600 bg-white" name="services">
                 <option id="air">Air</option>
                 <option id="sea">Ocean</option>
                 <option id="land">Road</option>

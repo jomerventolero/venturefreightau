@@ -8,17 +8,16 @@ import BoxCollection from '@/components/BoxCollection'
 import Loader from '@/components/Loader'
 import Head from 'next/head'
 
-import { useRouter } from "next/navigation";
 import { CardStackDemo } from '@/components/CardStackDemo'
+import { Suspense } from 'react'
 
 
 
 export default function Home() {
-  const router = useRouter()
 
-  const isLoading = router.isFallback || router.isReady;
   return (
     <>
+    <Suspense fallback={<Loader />}>
       <Head>
         <title>Venture Freight Australia</title>
         <meta name="description" content="Venture Freight Australia is an accredited freight forwarding company by Australian Customs Service and Australian Quarantine and Inspection Service (AQIS). Our speciality is making sure that every customs entry is compliant with the various Australian governing bodies and the shipments that we handle are cleared and delivered to the highest service level." />
@@ -33,7 +32,7 @@ export default function Home() {
         <CardStackDemo />
         <Footer />
       </main>
-      {isLoading && <Loader />}
+    </Suspense>
     </>
   )
 }
