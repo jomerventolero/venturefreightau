@@ -29,6 +29,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      skew: {
+        '45': '45deg',
+      },
       backgroundImage: {
         'shipaerial': 'url("/public/assets/shipaerial.jpg")',
         'container': 'url("/public/assets/container-operations.png")',

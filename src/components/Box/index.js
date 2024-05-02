@@ -8,7 +8,7 @@ const Box = ({title, description, href }) => {
           {title}
         </div>
         <div className="border-[1px] border-slate-400 w-3/4 "/>
-        <p className="p-2 self-center align-middle text-center my-auto text-[10px] sm:text-xs">
+        <p className="p-2 self-center align-middle text-center my-auto text-[10px] sm:text-xs hover:text-blue-400 duration-300 transition-colors">
           {description}
         </p>
     </motion.a>

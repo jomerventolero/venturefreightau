@@ -53,7 +53,7 @@ const ImageSlider = () => {
 
 
   return (
-    <div className='max-w-[1800px] h-[580px] sm:w-3/4 w-full transition-all duration-300 m-auto p-0 mt-10 sm:py-16 relative group place-items-center z-10 flex flex-col'>
+    <div className='max-w-[1800px] h-[580px] sm:w-3/4 w-full transition-all duration-300 m-auto p-0 mt-16 sm:py-16 relative group place-items-center z-10 flex flex-col'>
         
       <div
         style={{ backgroundImage: `url(${slides[(currentIndex - 1 + slides.length) % slides.length].url})` }}

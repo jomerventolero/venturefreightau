@@ -15,13 +15,13 @@ const about = () => {
         <meta name="keywords" content="freight forwarding, freight forwarder, customs, quarantine, inspection, australian, customs service"/>
       </Head>
       <Navbar />
-      <Image src="/assets/aerialview.jpg" width={1500} height={800} alt="about" className="w-screen h-[150px] object-cover mt-[3rem] sm:mt-[4rem]"/>
+      <Image src="/assets/aerialview.jpg" width={1500} height={800} alt="about" className="w-screen h-[300px] object-cover mt-[3rem] sm:mt-[4rem]"/>
       <motion.span
         initial={{ opacity: 0}}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.1 }}
         viewport={{ once: true }}
-        className="absolute z-40 top-28 font-bold text-white text-2xl sm:text-4xl drop-shadow-2xl">Why Choose Us?</motion.span>
+        className="absolute z-40 top-[30%] font-bold text-white text-2xl sm:text-4xl drop-shadow-2xl">Why Choose Us?</motion.span>
       <motion.div
         initial={{ opacity: 0}}
         whileInView={{ opacity: 1 }}
@@ -29,14 +29,12 @@ const about = () => {
         viewport={{ once: true }}
         className="w-full place-items-center flex flex-row justify-center self-center items-center gap-2 px-4"
       >
-      <Image 
-        
-        src="/assets/about-us.jpg" width={1400} height={800} alt="about" className="sm:w-3/4 h-full object-cover py-4 px-4"/>
+        <Image src="/assets/about-us.jpg" width={1400} height={800} alt="about" className="sm:w-3/4 h-full object-cover py-4 px-4"/>
       </motion.div>
       <motion.section 
         initial={{ opacity: 0}}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1 }}
+        transition={{ duration: 1, delay: 0 }}
         viewport={{ once: true }}
         className="flex flex-row justify-center self-center items-center gap-2 px-4">
         <IoHardwareChip size="2rem" className="text-blue-500"/>
