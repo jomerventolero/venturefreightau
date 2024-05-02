@@ -15,7 +15,7 @@ const BulkShipping = () => {
     }, []);
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2 bg-white text-slate-800">
         <Navbar />
         <Image src="/assets/shiprear.jpg" alt="shiprear" width={1500} height={800}
             className='parallax object-cover w-full h-[30vh] sm:h-[40vh] object-top'

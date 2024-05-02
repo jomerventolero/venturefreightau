@@ -25,7 +25,7 @@ const Navbar = () => {
           <FaMailBulk size="1.5rem"/>
           <a href="mailto:info@venturefreight.com.au">info@venturefreight.com.au</a>
         </div>
-        <div className="absolute top-6 left-[85%] hidden sm:flex flex-row gap-2 text-blue-400">
+        <div className="absolute top-6 left-[87%] hidden sm:flex flex-row gap-2 text-blue-400">
           <FaPhone size="1rem" className="self-center"/>
           <a href="tel:+61 3 9422 8017">+61 3 9422 8017</a>
         </div>
